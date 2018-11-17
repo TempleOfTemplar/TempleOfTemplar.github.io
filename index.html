@@ -1,207 +1,455 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+<html lang="ru" class="has-navbar-fixed-top">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>My first Bulma website</title>
     <link rel="stylesheet" href="css/main.css">
-  </head>
-  <body>
-    <section class="hero is-medium is-primary">
-      <div class="hero-body">
-        <div class="container">
-          <div class="columns">
-            <div class="column is-8-desktop is-offset-2-desktop">
-              <h1 class="title is-2 is-spaced">
-                Hello Bulma!
-              </h1>
-              <h2 class="subtitle is-4">
-                  Congratulations! You're running the <strong>Bulma start</strong> project.
-                  <br>
-                  It includes everything you need to <strong>build your own website</strong> with Bulma.
-              </h2>
-            </div>
-          </div>
+    <script async type="text/javascript" src="lib/bulma.js"></script>
+    <script src="https://unpkg.com/ionicons@4.4.7/dist/ionicons.js"></script>
+    <!--modal-fx-->
+    <!--<link rel="stylesheet" href="/node_modules/bulma-modal-fx/dist/css/modal-fx.min.css">-->
+    <!--<script defer src="/node_modules/bulma-modal-fx/dist/js/modal-fx.min.js"></script>-->
+    <link rel="stylesheet" href="css/modal-fx.min.css">
+    <script defer src="lib/modal-fx.min.js"></script>
+    <!--carousel-->
+    <!--<link rel="stylesheet" href="/node_modules/bulma-carousel/dist/css/bulma-carousel.min.css">-->
+    <!--<script type="text/javascript" src="/node_modules/bulma-carousel/dist/js/bulma-carousel.min.js"></script>-->
+    <!--<link rel="stylesheet" href="css/bulma-carousel.min.css">-->
+    <!--<script type="text/javascript" src="lib/bulma-carousel.min.js"></script>-->
+    <!--<link href="css/ionicons.min.css" rel="stylesheet">-->
+    <!--<script src="lib/ionicons.js"></script>-->
+</head>
+<body>
+<!--NAVBAR-->
+<nav class="navbar  is-primary is-fixed-top">
+    <div class="container">
+        <div class="navbar-brand">
+            <a class="navbar-item logo" href="../">
+                Avis-sport
+               <!-- <img src="http://bulma.io/images/bulma-type-white.png" alt="Logo">-->
+            </a>
+            <span class="navbar-burger burger" data-target="navbarMenu">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </span>
         </div>
-      </div>
-    </section>
-    <section class="section">
-      <div class="container">
+        <div id="navbarMenu" class="navbar-menu">
+            <div class="navbar-end">
+                <div class="tabs is-right">
+                    <ul>
+                        <li><a href="#hero-section">Главная</a></li>
+                        <li><a href="#cards-section">Группы</a></li>
+                        <li><a href="#teachers-section">Преподаватели</a></li>
+                        <li><a href="#about-section">О нас</a></li>
+                        <li><a href="#reviews-section">Отзывы</a></li>
+                        <li><a href="#findus-section">Адреса</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>
+<!--HERO + CONTACT FORM SECTION-->
+<section class="screen hero" id="hero-section">
+    <div class="hero-body">
+        <div class="container has-text-centered">
+            <div class="columns is-vcentered" id="hero-columns">
+                <div class="column is-6">
+                    <div class="box">
+                        <!-- Contact -->
+                        <div class="section-heading">
+                            <h3 class="title is-2">Погружение в&nbsp;красоту движения!</h3>
+                            <h4 class="subtitle is-5">Заполни форму, чтобы посетить занятие по&nbsp;художественной
+                                гимнастике</h4>
+                        </div>
+                        <br>
+
+                        <form action="">
+                            <!--NAME FIELD-->
+                            <div class="field is-horizontal">
+                                <div class="field-label is-normal">
+                                    <label class="label">Имя</label>
+                                </div>
+                                <div class="field-body">
+                                    <div class="field">
+                                        <div class="control has-icons-left">
+                                            <input class="input is-success" type="text" placeholder="Имя">
+                                            <span class="icon is-small is-left">
+      <ion-icon name="person"></ion-icon>
+    </span>
+                                        </div>
+                                        <p class="help is-success">
+                                            This field is required
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--PHONE FIELD-->
+                            <div class="field is-horizontal">
+                                <div class="field-label is-normal">
+                                    <label class="label">Телефон</label>
+                                </div>
+                                <div class="field-body">
+                                    <div class="field">
+                                        <div class="control has-icons-left">
+                                            <input class="input is-danger" type="text" placeholder="+7 XXX XXXXXXX">
+                                            <span class="icon is-small is-left">
+     <ion-icon name="call"></ion-icon>
+    </span>
+                                        </div>
+                                        <p class="help is-danger">
+                                            This field is required
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--EMAIL FIELD-->
+                            <div class="field is-horizontal">
+                                <div class="field-label is-normal">
+                                    <label class="label">Email</label>
+                                </div>
+                                <div class="field-body">
+                                    <div class="field">
+                                        <div class="control has-icons-left">
+                                            <input class="input is-danger" type="email" placeholder="Ваш e-mail">
+                                            <span class="icon is-small is-left">
+     <ion-icon name="mail"></ion-icon>
+    </span>
+                                        </div>
+                                        <p class="help is-danger">
+                                            This email is invalid
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--MESSAGE FIELD-->
+                            <div class="field is-horizontal">
+                                <div class="field-label is-normal">
+                                    <label class="label">Сообщение</label>
+                                </div>
+                                <div class="field-body">
+                                    <div class="field">
+                                        <div class="control">
+                                            <textarea class="textarea" placeholder=""></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--CHECKBOX FIELD-->
+                            <div class="field is-horizontal">
+                                <div class="field-label">
+                                    <label class="label"></label>
+                                </div>
+                                <div class="field-body">
+                                    <div class="field is-narrow">
+                                        <div class="control">
+                                            <label class="checkbox">
+                                                <input type="checkbox">
+                                                Я соглашаюсь на передачу персональных данных согласно <a href="#"
+                                                                                                         class="is-link">политике
+                                                конфиденциальности</a> и <a href="#" class="is-link">пользовательскому
+                                                соглашению</a>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--SUBMIT BUTTION-->
+                            <div class="field is-horizontal">
+                                <div class="field-label">
+                                    <!-- Left empty for spacing -->
+                                </div>
+                                <div class="field-body">
+                                    <div class="field">
+                                        <div class="control">
+                                            <button class="button is-primary is-fullwidth">
+                                                Записаться на занятие
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="column is-6">
+                    <figure class="image is-hidden-mobile">
+                        <img src="img/girl_1.png" alt="Description">
+                    </figure>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--TEACHERS SECTION-->
+<!--<section class="section screen container" id="teachers-section">-->
+    <!--<div class="columns">-->
+        <!--<div class="column is-4">-->
+
+        <!--</div>-->
+    <!--</div>-->
+<!--</section>-->
+<!--MODAL CARDS SECTION-->
+<section class="section screen container" id="cards-section">
+    <div class="columns features">
+        <div class="column is-4">
+            <div class="card is-shady">
+                <div class="card-image">
+                    <figure class="image">
+                        <img src="img/for-small-kids_750x500.png" alt="Placeholder image" class="modal-button"
+                             data-target="modal-image2">
+                    </figure>
+                </div>
+                <div class="card-content">
+                    <div class="content">
+                        <p class="title">
+                            Младшая группа
+                        </p>
+                        <p class="subtitle">
+                            (от 3 до 7 лет)
+                        </p>
+                        <p>Занятия направлены на правильное физическое развитие малыша, улучшение координации,
+                            правильного формирования опорно-двигательного аппарата.
+                            Все занятия проходят в сопровождении родителей.</p>
+                        <span class="button is-link modal-button" data-target="modal-schedule-kids">Расписание</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="column is-4">
+            <div class="card is-shady">
+                <div class="card-image">
+                    <figure class="image">
+                        <img src="img/for-kids_750x500.png" alt="Placeholder image" class="modal-button"
+                             data-target="modal-image2">
+                    </figure>
+                </div>
+                <div class="card-content">
+                    <div class="content">
+                        <p class="title">
+                            Старшая группа
+                        </p>
+                        <p class="subtitle">
+                            (от 8 до 17 лет)
+                        </p>
+                        <p>Начало профессиональных занятий спортивной гимнастикой. Подготовка к соревнованиям. Наиболее
+                            выдающиеся ученики поступают на бюджетные места.
+                            Получение спортивных разрядов, участие в соревнованиях.</p>
+                        <span class="button is-link modal-button"
+                              data-target="modal-schedule-teenagers">Расписание</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="column is-4">
+            <div class="card is-shady">
+                <div class="card-image">
+                    <figure class="image">
+                        <img src="img/for_adults_750x500.jpg" alt="Placeholder image">
+                    </figure>
+                </div>
+                <div class="card-content">
+                    <div class="content">
+                        <p class="title">
+                            Взрослая группа
+                        </p>
+                        <p class="subtitle">
+                            (без ограничений по возрасту)
+                        </p>
+                        <p>Программа занятий включает в себя следующие направления подготовки:</p>
+                        <ul>
+                            <li>общая физическая подготовка;</li>
+                            <li>специальная физическая подготовка (гибкость, растяжка);</li>
+                            <li>предметная подготовка (скакалка, мяч, обруч, булавы, лента);</li>
+                            <li>классическая хореография;</li>
+                            <li>основы акробатики;</li>
+                            <li>танцевальная подготовка;</li>
+                        </ul>
+                        <span class="button is-link modal-button" data-target="modal-schedule-adults">Расписание</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--ABOUT SECTION-->
+<!--<section class="section screen container" id="about-section">-->
+    <!--<div class="columns">-->
+        <!--<div class="column is-4">-->
+
+        <!--</div>-->
+    <!--</div>-->
+<!--</section>-->
+<!--REVIEWS SECTION-->
+<section class="screen container" id="reviews-section">
+
+    <div class="container">
+        <div id="flow">
+            <span class="flow-1"></span>
+            <span class="flow-2"></span>
+            <span class="flow-3"></span>
+        </div>
+        <div class="section">
+            <!-- Developers -->
+            <h3 class="">Отзывы</h3>
+
+            <div class="row columns">
+                <div class="column is-one-third">
+                    <div class="card large">
+                        <div class="card-content">
+                            <div class="media">
+                                <div class="media-left">
+                                    <figure class="image is-96x96">
+                                        <img src="https://i.imgsafe.org/a4/a4bb9acc5e.jpeg" alt="Image">
+                                    </figure>
+                                </div>
+                                <div class="media-content">
+                                    <p class="title is-4 no-padding">Okinami</p>
+                                    <p><span class="title is-6"><a href="http://twitter.com/#">@twitterid</a></span></p>
+                                    <p class="subtitle is-6">Lead Developer</p>
+                                </div>
+                            </div>
+                            <div class="content">
+                                The Beast stumbled in the dark for it could no longer see the path. It started to
+                                fracture and weaken, trying to reshape itself into the form of metal. Even the witches
+                                would no longer lay eyes upon it, for it had become hideous and twisted.
+                                <div class="background-icon"><span class="icon-twitter"></span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="column is-one-third">
+                    <div class="card large">
+                        <div class="card-content">
+                            <div class="media">
+                                <div class="media-left">
+                                    <figure class="image is-96x96">
+                                        <img src="https://cdn.discordapp.com/avatars/244932903530659841/0c924a19fcf1b5c59bc9dc1b58b61bb0.jpg?size=1024"
+                                             alt="Image">
+                                    </figure>
+                                </div>
+                                <div class="media-content">
+                                    <p class="title is-4 no-padding">McSocks</p>
+                                    <p><span class="title is-6"><a href="http://twitter.com/#">@twitterid</a></span></p>
+                                    <p class="subtitle is-6">Developer</p>
+                                </div>
+                            </div>
+                            <div class="content">
+                                The soul of the Beast seemed lost forever. Then, by the full moon's light, a child was
+                                born; child with the unbridled soul of the Beast that would make all others pale in
+                                comparison.
+                                <div class="background-icon"><span class="icon-facebook"></span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="column is-one-third">
+                    <div class="card large">
+                        <div class="card-content">
+                            <div class="media">
+                                <div class="media-left">
+                                    <figure class="image is-96x96">
+                                        <img src="https://i.imgsafe.org/a5/a5e978ce20.jpeg" alt="Image">
+                                    </figure>
+                                </div>
+                                <div class="media-content">
+                                    <p class="title is-4 no-padding">The Conceptionist</p>
+                                    <p><span class="title is-6"><a href="http://twitter.com/#">@twitterid</a></span></p>
+                                    <p class="subtitle is-6">Developer</p>
+                                </div>
+                            </div>
+                            <div class="content">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum consequatur numquam
+                                aliquam tenetur ad amet inventore hic beatae, quas accusantium perferendis sapiente
+                                explicabo, corporis totam! Labore reprehenderit beatae magnam animi!
+                                <div class="background-icon"><span class="icon-barcode"></span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End Developers -->
+            <!-- End Staff -->
+        </div>
+    </div>
+
+</section>
+<!--ADDRESSES SECTION-->
+<section class="section screen container" id="findus-section">
+    <script type="text/javascript" charset="utf-8" async
+            src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A2a3fe2e1f112cd9e9974ec732a0f73ff167590615bcbcd0b07cbd29ceeb79b2e&amp;width=100%25&amp;height=600&amp;lang=ru_RU&amp;scroll=false"></script>
+</section>
+<!--FOOTER-->
+<footer class="footer has-text-centered">
+    <div class="container">
         <div class="columns">
-          <div class="column is-8-desktop is-offset-2-desktop">
-            <div class="content">
-              <h3>What's included</h3>
-              <p>
-                The <code>npm</code> dependencies included in <code>package.json</code> are:
-              </p>
-              <ul>
-                <li>
-                  <code><a href="https://github.com/jgthms/bulma">bulma</a></code>
-                </li>
-                <li>
-                  <code><a href="https://github.com/sass/node-sass">node-sass</a></code> to compile your own Sass file
-                </li>
-                <li>
-                  <code><a href="https://github.com/postcss/postcss-cli">postcss-cli</a></code> and <code><a href="https://github.com/postcss/autoprefixer">autoprefixer</a></code> to add support for older browsers
-                </li>
-                <li>
-                  <code><a href="https://babeljs.io/docs/usage/cli/">babel-cli</a></code>,
-                  <code><a href="https://github.com/babel/babel-preset-env">babel-preset-env</a></code>
-                  and
-                  <code><a href="https://github.com/jmcriffey/babel-preset-es2015-ie">babel-preset-es2015-ie</a></code>
-                  for compiling ES6 JavaScript files
-                </li>
-              </ul>
-              <p>
-                Apart from <code>package.json</code>, the following files are included:
-              </p>
-              <ul>
-                <li>
-                  <code>.babelrc</code> configuration file for <a href="https://babeljs.io/">Babel</a>
-                </li>
-                <li>
-                  <code>.gitignore</code> common <a href="https://git-scm.com/">Git</a> ignored files
-                </li>
-                <li>
-                  <code>index.html</code> this HTML5 file
-                </li>
-                <li>
-                  <code>_sass/main.scss</code> a basic SCSS file that <strong>imports Bulma</strong> and explains how to <strong>customize</strong> your styles, and compiles to <code>css/main.css</code>
-                </li>
-                <li>
-                  <code>_javascript/main.js</code> an ES6 JavaScript that compiles to <code>lib/main.js</code>
-                </li>
-              </ul>
-              <h3>Try it out!</h3>
-              <p>
-                To see if your setup works, follow these steps:
-              </p>
-              <ol>
-                <li>
-                  <p>
-                    <strong>Install</strong> all dependencies:
-                    <br>
-                    <pre><code>npm install</code></pre>
-                  </p>
-                </li>
-                <li>
-                  <p>
-                    <strong>Start</strong> the CSS and JS watchers:
-                    <br>
-                    <pre><code>npm start</code></pre>
-                  </p>
-                </li>
-                <li>
-                  <p>
-                    <strong>Edit</strong> <code>_sass/main.scss</code> by adding the following rule at the <strong>end</strong> of the file:
-                    <br>
-                    <pre><code>html { background-color: $green;}</code></pre>
-                  </p>
-                </li>
-              </ol>
-              <p>
-                The page background should turn <strong class="has-text-success">green</strong>!
-              </p>
-              <h3>Get started</h3>
-              <p>
-                You're <strong>ready</strong> to create your own designs with Bulma. Just edit or duplicate this page, or simply create a new one!
-                <br>
-                For example, this page is <strong>only</strong> built with the following <strong>Bulma elements</strong>:
-              </p>
+            <div class="column is-8-desktop is-offset-2-desktop">
+                <p>
+                    <strong class="has-text-weight-semibold">
+                        ©2018 Avis-спорт
+                    </strong>
+                </p>
             </div>
-            <table class="table is-bordered is-fullwidth">
-              <thead>
-                <tr>
-                  <th>Type</th>
-                  <th>CSS class</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <th>Columns</th>
-                  <td>
-                    <code><a href="http://bulma.io/documentation/columns/basics">columns</a></code>
-                    <code><a href="http://bulma.io/documentation/columns/basics">column</a></code>
-                  </td>
-                </tr>
-                <tr>
-                  <th>Layout</th>
-                  <td>
-                    <code><a href="http://bulma.io/documentation/layout/section">section</a></code>
-                    <code><a href="http://bulma.io/documentation/layout/container">container</a></code>
-                    <code><a href="http://bulma.io/documentation/layout/footer">footer</a></code>
-                  </td>
-                </tr>
-                <tr>
-                  <th>Elements</th>
-                  <td>
-                    <code><a href="http://bulma.io/documentation/elements/button">button</a></code>
-                    <code><a href="http://bulma.io/documentation/elements/content">content</a></code>
-                    <code><a href="http://bulma.io/documentation/elements/title">title</a></code>
-                    <code><a href="http://bulma.io/documentation/elements/title">subtitle</a></code>
-                  </td>
-                </tr>
-                <tr>
-                  <th>Form</th>
-                  <td>
-                    <code><a href="http://bulma.io/documentation/form/general">field</a></code>
-                    <code><a href="http://bulma.io/documentation/form/general">control</a></code>
-                  </td>
-                </tr>
-                <tr>
-                  <th>Helpers</th>
-                  <td>
-                    <code><a href="http://bulma.io/documentation/modifiers/typography-helpers/">has-text-centered</a></code>
-                    <code><a href="http://bulma.io/documentation/modifiers/typography-helpers/">has-text-weight-semibold</a></code>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-            <div class="content">
-              <p>
-                If you want to <strong>learn more</strong>, follow these links:
-              </p>
-            </div>
-            <div class="field is-grouped">
-              <p class="control">
-                <a class="button is-medium is-primary" href="http://bulma.io">
-                  <strong class="has-text-weight-semibold">Bulma homepage</strong>
-                </a>
-              </p>
-              <p class="control">
-                <a class="button is-medium is-link" href="http://bulma.io/documentation/overview/start/">
-                  <strong class="has-text-weight-semibold">Documentation</strong>
-                </a>
-              </p>
-            </div>
-          </div>
         </div>
-      </div>
-    </section>
-    <footer class="footer has-text-centered">
-      <div class="container">
-         <div class="columns">
-          <div class="column is-8-desktop is-offset-2-desktop">
-            <p>
-              <strong class="has-text-weight-semibold">
-                <a href="https://www.npmjs.com/package/bulma-start">bulma-start@0.0.1</a>
-              </strong>
-            </p>
-            <p>
-              <small>
-                Source code licensed <a href="http://opensource.org/licenses/mit-license.php">MIT</a>
-              </small>
-            </p>
-            <p style="margin-top: 1rem;">
-              <a href="http://bulma.io">
-                <img src="made-with-bulma.png" alt="Made with Bulma" width="128" height="24">
-              </a>
-            </p>
-          </div>
-        </div>
-      </div>
-    </footer>
-    <script type="text/javascript" src="lib/main.js"></script>
-  </body>
+    </div>
+</footer>
+
+
+<!--
+===============
+HERE BE MODALS
+===============
+-->
+<!--KIDS SCHEDULE MODAL-->
+<div id="modal-schedule-kids" class="modal modal-full-screen modal-fx-fadeInScale">
+    <div class="modal-content modal-card">
+        <header class="modal-card-head">
+            <p class="modal-card-title">Modal title</p>
+            <button class="modal-button-close delete" aria-label="close"></button>
+        </header>
+        <section class="modal-card-body">
+            <!-- Modal card body -->
+        </section>
+        <footer class="modal-card-foot">
+            <button class="modal-button-close button is-success">Save changes</button>
+            <button class="modal-button-close button">Cancel</button>
+        </footer>
+    </div>
+</div>
+<!--TEENAGERS SCHEDULE MODAL-->
+<div id="modal-schedule-teenagers" class="modal modal-full-screen modal-fx-fadeInScale">
+    <div class="modal-content modal-card">
+        <header class="modal-card-head">
+            <p class="modal-card-title">Modal title</p>
+            <button class="modal-button-close delete" aria-label="close"></button>
+        </header>
+        <section class="modal-card-body">
+            <!-- Modal card body -->
+        </section>
+        <footer class="modal-card-foot">
+            <button class="modal-button-close button is-success">Save changes</button>
+            <button class="modal-button-close button">Cancel</button>
+        </footer>
+    </div>
+</div>
+<!--ADULTS SCHEDULE MODAL-->
+<div id="modal-schedule-adults" class="modal modal-fx-fadeInScale">
+    <div class="modal-content modal-card">
+        <header class="modal-card-head">
+            <p class="modal-card-title">Расписание тренировок (Взрослая группа)</p>
+            <button class="modal-button-close delete" aria-label="close"></button>
+        </header>
+        <section class="modal-card-body">
+            <!-- Modal card body -->
+            <iframe src="https://calendar.google.com/calendar/embed?showTabs=0&amp;showCalendars=0&amp;showTz=0&amp;height=500&amp;wkst=2&amp;hl=ru&amp;bgcolor=%23ffffff&amp;src=r0nbvmg1jt26el8q4b9gab2op4%40group.calendar.google.com&amp;color=%232F6309&amp;ctz=Asia%2FYekaterinburg"
+                    style="border-width:0" width="600" height="500" frameborder="0" scrolling="no"></iframe>
+        </section>
+    </div>
+</div>
+</body>
 </html>
