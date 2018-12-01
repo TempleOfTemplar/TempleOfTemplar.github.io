@@ -6532,3 +6532,9 @@ label.panel-block {
 @media screen and (max-width: 768px) {
   #hero-columns {
     flex-direction: column-reverse; } }
+
+.modal-card-head, .modal-card-foot {
+  justify-content: space-between; }
+
+.modal-card-title {
+  flex: 0 1 auto; }

@@ -61,6 +61,14 @@ $primary-invert: $pink-invert;
   }
 }
 
+.modal-card-head, .modal-card-foot {
+  justify-content: space-between;
+}
+
+.modal-card-title {
+  flex: 0 1 auto;
+}
+
 //.logo {
 //  font-size: 1.4em;
 //}
