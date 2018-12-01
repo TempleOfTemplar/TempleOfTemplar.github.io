@@ -32,6 +32,7 @@
   },
   "dependencies": {
     "bulma-carousel": "^3.0.0",
-    "bulma-modal-fx": "^1.1.1"
+    "bulma-modal-fx": "^1.1.1",
+    "gumshoejs": "github:cferdinandi/gumshoe"
   }
 }

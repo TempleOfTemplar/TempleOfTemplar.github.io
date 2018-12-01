@@ -13,6 +13,7 @@
     <!--<script defer src="/node_modules/bulma-modal-fx/dist/js/modal-fx.min.js"></script>-->
     <link rel="stylesheet" href="css/modal-fx.min.css">
     <script defer src="lib/modal-fx.min.js"></script>
+    <script src="lib/gumshoe.min.js"></script>
     <!--carousel-->
     <!--<link rel="stylesheet" href="/node_modules/bulma-carousel/dist/css/bulma-carousel.min.css">-->
     <!--<script type="text/javascript" src="/node_modules/bulma-carousel/dist/js/bulma-carousel.min.js"></script>-->
@@ -23,12 +24,12 @@
 </head>
 <body>
 <!--NAVBAR-->
-<nav class="navbar  is-primary is-fixed-top">
+<nav class="navbar is-primary is-fixed-top" data-gumshoe-header>
     <div class="container">
         <div class="navbar-brand">
             <a class="navbar-item logo" href="../">
                 Avis-sport
-               <!-- <img src="http://bulma.io/images/bulma-type-white.png" alt="Logo">-->
+                <!-- <img src="http://bulma.io/images/bulma-type-white.png" alt="Logo">-->
             </a>
             <span class="navbar-burger burger" data-target="navbarMenu">
                                 <span></span>
@@ -39,7 +40,7 @@
         <div id="navbarMenu" class="navbar-menu">
             <div class="navbar-end">
                 <div class="tabs is-right">
-                    <ul>
+                    <ul data-gumshoe>
                         <li><a href="#hero-section">Главная</a></li>
                         <li><a href="#cards-section">Группы</a></li>
                         <li><a href="#teachers-section">Преподаватели</a></li>
@@ -186,11 +187,11 @@
 </section>
 <!--TEACHERS SECTION-->
 <!--<section class="section screen container" id="teachers-section">-->
-    <!--<div class="columns">-->
-        <!--<div class="column is-4">-->
+<!--<div class="columns">-->
+<!--<div class="column is-4">-->
 
-        <!--</div>-->
-    <!--</div>-->
+<!--</div>-->
+<!--</div>-->
 <!--</section>-->
 <!--MODAL CARDS SECTION-->
 <section class="section screen container" id="cards-section">
@@ -279,11 +280,11 @@
 </section>
 <!--ABOUT SECTION-->
 <!--<section class="section screen container" id="about-section">-->
-    <!--<div class="columns">-->
-        <!--<div class="column is-4">-->
+<!--<div class="columns">-->
+<!--<div class="column is-4">-->
 
-        <!--</div>-->
-    <!--</div>-->
+<!--</div>-->
+<!--</div>-->
 <!--</section>-->
 <!--REVIEWS SECTION-->
 <section class="screen container" id="reviews-section">
