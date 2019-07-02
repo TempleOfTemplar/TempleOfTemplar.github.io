@@ -25,33 +25,12 @@ $primary-invert: $pink-invert;
 
 // 4. Import the rest of Bulma
 */
-@import "../node_modules/bulma/sass/utilities/initial-variables";
+
 @import "../node_modules/bulma/bulma";
 
-//@media screen and (min-width: 1088px) {
-//  .navbar.is-spaced {
-//    padding: 1rem 2rem;
-//  }
-//
-//  .navbar.is-spaced .navbar-start,
-//  .navbar.is-spaced .navbar-end {
-//    -webkit-box-align: center;
-//    -ms-flex-align: center;
-//    align-items: center;
-//  }
-//
-//  .navbar.is-spaced a.navbar-item,
-//  .navbar.is-spaced .navbar-link {
-//    border-radius: 4px;
-//  }
-//}
+
 #hero-section{
   background-image: url("../img/fon_1.png"), linear-gradient(#FFFFFF, #FCFCFC, #EDF03E, #FCFCFC, #FFFFFF);
-  //background-position: center center;
-  //background-attachment: fixed;
-  //background-color: #999;
-
-
   background-size: 100%;
   background-repeat: no-repeat;
 }
@@ -68,7 +47,3 @@ $primary-invert: $pink-invert;
 .modal-card-title {
   flex: 0 1 auto;
 }
-
-//.logo {
-//  font-size: 1.4em;
-//}
