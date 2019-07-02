@@ -7007,7 +7007,9 @@ label.panel-block {
 
 .contact_phone__mobile {
   color: white;
-  font-size: 24px; }
+  font-size: 24px;
+  line-height: 24px;
+  vertical-align: middle; }
 
 .mobile-contacts {
   padding-left: 0; }
@@ -7021,7 +7023,19 @@ label.panel-block {
 
 .social-block__mobile > a > img {
   display: block;
-  width: 36px;
-  height: 36px;
-  max-height: 36px;
-  max-width: 36px; }
+  width: 32px;
+  height: 32px;
+  max-height: 32px;
+  max-width: 32px; }
+
+.vcentered-icon {
+  display: inline-block;
+  vertical-align: middle; }
+
+.phone-icon,
+.phone-number {
+  vertical-align: middle;
+  display: inline-block; }
+
+.phone-icon + .phone-number {
+  margin-left: 0.25rem; }
