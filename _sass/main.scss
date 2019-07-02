@@ -9,6 +9,7 @@
 // 1. Import the initial variables
 @import "../node_modules/bulma/sass/utilities/initial-variables";
 
+
 // 2. Set your own initial variables
 // Update the blue shade, used for links
 $blue: #06bcef;
@@ -25,15 +26,15 @@ $primary-invert: $pink-invert;
 
 // 4. Import the rest of Bulma
 */
-
+$primary: #f5a83c;
 @import "../node_modules/bulma/bulma";
 
-
-#hero-section{
+#hero-section {
   background-image: url("../img/fon_1.png"), linear-gradient(#FFFFFF, #FCFCFC, #EDF03E, #FCFCFC, #FFFFFF);
   background-size: 100%;
   background-repeat: no-repeat;
 }
+
 @media screen and (max-width: $tablet - 1px) {
   #hero-columns {
     flex-direction: column-reverse;
@@ -46,4 +47,49 @@ $primary-invert: $pink-invert;
 
 .modal-card-title {
   flex: 0 1 auto;
+}
+
+/*NAVBAR*/
+.logo {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.logo img {
+  max-height: 52px;
+}
+
+.contact_phone {
+
+}
+
+.contact_phone__mobile {
+  color: $white;
+  font-size: 24px;
+}
+
+.mobile-contacts {
+  padding-left: 0;
+}
+
+.social-block__mobile {
+  display: flex;
+  padding-left: 0.5rem;
+}
+
+.social-block__mobile a {
+
+  //display: flex;
+}
+
+.social-block__mobile a + a {
+  padding-left: 0.5rem;
+}
+
+.social-block__mobile > a > img {
+  display: block;
+  width: 36px;
+  height: 36px;
+  max-height: 36px;
+  max-width: 36px;
 }

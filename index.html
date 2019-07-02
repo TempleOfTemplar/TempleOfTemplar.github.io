@@ -28,18 +28,31 @@
     <div class="container">
         <div class="navbar-brand">
             <a class="navbar-item logo" href="../">
-                Avis-sport
+                <img src="img/logo-150x150.jpg"/>
                 <!-- <img src="http://bulma.io/images/bulma-type-white.png" alt="Logo">-->
             </a>
+
+                 <div class="navbar-item mobile-contacts is-hidden-desktop">
+                                   <a class="contact_phone__mobile" href="tel:207-12-37">207-12-37</a>
+                                          <div class="social-block__mobile">
+                                          <!--<ion-icon name="logo-vk"  size="large"></ion-icon>
+                                          <ion-icon name="logo-instagram"  size="large"></ion-icon>
+                                          -->
+                                  			  <a href="https://vk.com/na_gimnastike"><img class="social" src="img/vk.svg" alt="vk" title="vk"></a>
+                                  			  <a href="https://www.instagram.com/na_gimnastike/"><img class="social" src="img/instagram.svg" alt="instagram" title="instagram"></a>
+                                  	    </div>
+                                  </div>
+
+
             <span class="navbar-burger burger" data-target="navbarMenu">
                                 <span></span>
                                 <span></span>
                                 <span></span>
-                            </span>
+            </span>
         </div>
-        <div id="navbarMenu" class="navbar-menu">
-            <div class="navbar-end">
-                <div class="tabs is-right">
+        <div id="navbarMenu" class="navbar-menu is-centered">
+            <div>
+                <div class="tabs">
                     <ul data-gumshoe>
                         <li><a href="#hero-section">Главная</a></li>
                         <li><a href="#cards-section">Группы</a></li>
@@ -51,11 +64,21 @@
                 </div>
             </div>
         </div>
+
+        <div class="navbar-end is-hidden-touch">
+                      <div class="navbar-item">
+                       <a class="contact_phone" href="tel:207-12-37">207-12-37</a>
+                              <div id="social_block">
+                      			  <a href="https://vk.com/na_gimnastike"><ion-icon name="logo-vk"></ion-icon></a>
+                      			  <a href="https://www.instagram.com/na_gimnastike/"><ion-icon name="logo-instagram"></ion-icon></a>
+                      	    </div>
+                      </div>
+              </div>
+
     </div>
 </nav>
 <!--HERO + CONTACT FORM SECTION-->
 <section class="screen hero" id="hero-section">
-    <div class="hero-body">
         <div class="container has-text-centered">
             <div class="columns is-vcentered" id="hero-columns">
                 <div class="column is-6">
@@ -183,7 +206,6 @@
                 </div>
             </div>
         </div>
-    </div>
 </section>
 <!--TEACHERS SECTION-->
 <!--<section class="section screen container" id="teachers-section">-->
