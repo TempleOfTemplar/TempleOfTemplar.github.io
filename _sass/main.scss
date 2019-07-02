@@ -35,6 +35,9 @@ $primary: #f5a83c;
   background-repeat: no-repeat;
 }
 
+#hero-columns {
+  display: flex;
+}
 @media screen and (max-width: $tablet - 1px) {
   #hero-columns {
     flex-direction: column-reverse;
