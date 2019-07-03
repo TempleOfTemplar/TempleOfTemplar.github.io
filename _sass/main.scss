@@ -5,31 +5,40 @@
 // You can easily customize Bulma with your own variables.
 // Just uncomment the following block to see the result.
 
-/*
+
 // 1. Import the initial variables
 @import "../node_modules/bulma/sass/utilities/initial-variables";
 
 
 // 2. Set your own initial variables
 // Update the blue shade, used for links
-$blue: #06bcef;
+// $blue: #06bcef;
 // Add pink and its invert
-$pink: #ff8080;
-$pink-invert: #fff;
+// $pink: #ff8080;
+// $pink-invert: #fff;
 // Update the sans-serif font family
-$family-sans-serif: "Helvetica", "Arial", sans-serif;
+// $family-sans-serif: "Helvetica", "Arial", sans-serif;
+
 
 // 3. Set the derived variables
 // Use the new pink as the primary color
-$primary: $pink;
-$primary-invert: $pink-invert;
 
-// 4. Import the rest of Bulma
-*/
-$primary: #f5a83c;
+$basic-orange: #fb9744;
+$basic-blue: #2287c9;
+$basic-red: #c9443b ;
+
+$blue: $basic-blue;
+$red: $basic-red;
+
+$primary: $basic-orange;
 $tabs-link-color: #fff;
 $tabs-border-bottom-width: 2px;
+$tabs-link-hover-color: $blue;
 $tabs-link-padding: 0.25em 0.5em;
+
+// 4. Import the rest of Bulma
+
+
 @import "../node_modules/bulma/bulma";
 
 #hero-section {
@@ -162,4 +171,21 @@ $tabs-link-padding: 0.25em 0.5em;
 
 .main-title {
 
+}
+
+.check-icon {
+  color: $success;
+  font-size: 5rem;
+}
+
+.reviews {
+  overflow: hidden;
+}
+
+.reviews .card {
+  box-shadow: none;
+}
+
+.rating {
+  color: #ffc84b;
 }

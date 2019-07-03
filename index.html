@@ -15,8 +15,8 @@
     <script defer src="lib/modal-fx.min.js"></script>
     <script src="lib/gumshoe.min.js"></script>
     <!--carousel-->
-    <!--<link rel="stylesheet" href="/node_modules/bulma-carousel/dist/css/bulma-carousel.min.css">-->
-    <!--<script type="text/javascript" src="/node_modules/bulma-carousel/dist/js/bulma-carousel.min.js"></script>-->
+    <link rel="stylesheet" href="node_modules/bulma-carousel/dist/css/bulma-carousel.min.css">
+    <script type="text/javascript" src="node_modules/bulma-carousel/dist/js/bulma-carousel.min.js"></script>
     <!--<link rel="stylesheet" href="css/bulma-carousel.min.css">-->
     <!--<script type="text/javascript" src="lib/bulma-carousel.min.js"></script>-->
     <!--<link href="css/ionicons.min.css" rel="stylesheet">-->
@@ -86,7 +86,7 @@
 <section class="screen hero" id="hero-section">
         <div class="container has-text-centered">
          <h1 class="is-size-3 main-title has-text-weight-bold">Художественная гимнастика для детей и взрослых</h1>
-            <div class="is-vcentered" id="hero-columns">
+            <div class="columns is-vcentered" id="hero-columns">
                 <div class="column is-6">
                     <div class="box" id="mainForm">
                         <!-- Contact -->
@@ -209,7 +209,34 @@
                     </figure>
                 </div>
             </div>
+
+
+            <div class="columns">
+              <div class="column">
+                  <div class="box">
+                      <ion-icon class="check-icon" name="checkmark-circle-outline"></ion-icon>
+                      <p class="is-size-2 is-size-4-mobile">Опытные тренеры!</p>
+                  </div>
+              </div>
+
+              <div class="column">
+                                <div class="box">
+                                    <ion-icon  class="check-icon" name="checkmark-circle-outline"></ion-icon>
+                                    <p class="is-size-2 is-size-4-mobile">Без вреда здоровью!</p>
+                                </div>
+                            </div>
+
+                            <div class="column">
+                                              <div class="box">
+                                                  <ion-icon class="check-icon" name="checkmark-circle-outline"></ion-icon>
+                                                  <p class="is-size-2 is-size-4-mobile">Получится у всех!</p>
+                                              </div>
+                                          </div>
+            </div>
         </div>
+
+
+
 </section>
 <!--TEACHERS SECTION-->
 <!--<section class="section screen container" id="teachers-section">-->
@@ -220,6 +247,7 @@
 <!--</div>-->
 <!--</section>-->
 <!--MODAL CARDS SECTION-->
+<!--
 <section class="section screen container" id="cards-section">
     <div class="columns features">
         <div class="column is-4">
@@ -304,6 +332,7 @@
         </div>
     </div>
 </section>
+-->
 <!--ABOUT SECTION-->
 <!--<section class="section screen container" id="about-section">-->
 <!--<div class="columns">-->
@@ -313,98 +342,130 @@
 <!--</div>-->
 <!--</section>-->
 <!--REVIEWS SECTION-->
-<section class="screen container" id="reviews-section">
+<section class="section">
+<div class="container">
+    <h3 class="is-size-2">Отзывы</h3>
 
-    <div class="container">
-        <div id="flow">
-            <span class="flow-1"></span>
-            <span class="flow-2"></span>
-            <span class="flow-3"></span>
-        </div>
-        <div class="section">
-            <!-- Developers -->
-            <h3 class="">Отзывы</h3>
+<div class="reviews">
+ <!-- Start Carousel -->
+    <div id="carousel-demo" class="carousel">
+                                <div class="card">
+                                    <div class="card-content">
+                                        <div class="media">
+                                            <div class="media-left">
+                                                <figure class="image is-64x64">
+                                                    <img src="img/avatars/alesa_avdeeva_64x64.jpg" alt="Image">
+                                                </figure>
+                                            </div>
+                                            <div class="media-content">
+                                                <p class="title is-4 no-padding">Алеся Авдеева</p>
+                                                <p class="subtitle is-6 rating">
+                                                <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="content">
+                                          Привели дочку на&nbsp;гимнастику в&nbsp;АВИС-СПОРТ в&nbsp;сентябре 2018, едва только исполнилось 4&nbsp;года. Переживали, как она будет переносить нагрузки. Важно было и&nbsp;то, какие отношения сложатся с&nbsp;тренером и&nbsp;другими детьми . Все сложилось замечательно, дочка бежит на&nbsp;тренировки в&nbsp;отличном настроении. После тренировок возвращается всегда с&nbsp;улыбкой. При этом тренировки достаточно сложные и&nbsp;энергозатратные. Родители имеют возможность присутствовать на&nbsp;занятиях и&nbsp;наблюдать за&nbsp;тренировочным процессом. Поэтому можно абсолютно четко сформировать мнение о&nbsp;том, насколько эффективно построено занятие и&nbsp;общение тренера с&nbsp;подопечными. Регулярно устраиваются открытые уроки, где дети показывают все, чему научились. Немаловажно и&nbsp;то, что численность ребят в&nbsp;группах небольшая, поэтому тренер уделяет максимум внимания каждому ученику.
+                                          Очень рады, что выбрали именно гимнастику и&nbsp;попали в&nbsp;АВИС-СПОРТ, будем тренироваться и&nbsp;дальше!
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-content">
+                                        <div class="media">
+                                            <div class="media-left">
+                                                <figure class="image is-64x64">
+                                                    <img src="img/avatars/sonya_ryazanceva_64x64.jpg" alt="Image">
+                                                </figure>
+                                            </div>
+                                            <div class="media-content">
+                                                <p class="title is-4 no-padding">Соня Рязанцева</p>
+                                                <p class="subtitle is-6 rating">
+                                                <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="content">
+                                        Мне 13&nbsp;лет, я&nbsp;занимаюсь художественной гимнастикой в&nbsp;спорт-клубе &laquo;Avis-sport&raquo; Пришла примерно год назад, и&nbsp;уже многому научилась! Мне здесь очень нравиться заниматься! У&nbsp;тренера индивидуальный подход ко&nbsp;всем гимнасткам. Удобное время занятий, так что, можно совмещать гимнастику со&nbsp;школой. А&nbsp;так&nbsp;же я&nbsp;хожу на&nbsp;танцы, (они у&nbsp;меня шесть раз в&nbsp;неделю), и&nbsp;гимнастика очень помогает, появляется свобода движения. Мне нравится как нас растягивают, не&nbsp;больно, но&nbsp;эффективно. Учим новые элементы. Занимаемся с&nbsp;предметами. Очень хороший спортивный клуб!!!
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-content">
+                                        <div class="media">
+                                            <div class="media-left">
+                                                <figure class="image is-64x64">
+                                                    <img src="img/avatars/mikhail_churakov_64x64.jpg" alt="Image">
+                                                </figure>
+                                            </div>
+                                            <div class="media-content">
+                                                <p class="title is-4 no-padding">Михаил Чураков</p>
+                                                <p class="subtitle is-6 rating">
+                                                <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="content">
+                                        Уже несколько лет вдвоем с&nbsp;девушкой занимаемся классическим танцем, и&nbsp;в&nbsp;какой-то момент поняли, что на&nbsp;многие элементы просто не&nbsp;хватает растяжки и&nbsp;сил в&nbsp;мышцах. Стали искать что-то, что хорошо сочеталось, и&nbsp;вот&nbsp;&mdash; узнали об&nbsp;этом месте от&nbsp;знакомых.
+                                        1) Здесь преподают по&nbsp;принципу &laquo;чтобы было в&nbsp;радость&raquo;, и&nbsp;похоже, что это действительно так. Никаких сверхчеловеческих усилий и&nbsp;&laquo;ломки&raquo;, все мягко и&nbsp;с&nbsp;любовью, но&nbsp;и&nbsp;никаких лишних поблажек&nbsp;&mdash; иначе откуда результаты?
+                                        2) Наверное единственное место в&nbsp;городе, где ведут занятия по&nbsp;худ. Гимнастике для взрослых! Без каких либо ограничений по&nbsp;возрасту, физической форме и&nbsp;даже полу!
+                                        3) Вполне адекватная ценовая политика. Учитывая, что занятия ведут реальные мастера спорта по&nbsp;Худ.Гимнастике&nbsp;&mdash; это вообще аттракцион невиданной щедрости с&nbsp;их&nbsp;стороны!
 
-            <div class="row columns">
-                <div class="column is-one-third">
-                    <div class="card large">
-                        <div class="card-content">
-                            <div class="media">
-                                <div class="media-left">
-                                    <figure class="image is-96x96">
-                                        <img src="https://i.imgsafe.org/a4/a4bb9acc5e.jpeg" alt="Image">
-                                    </figure>
+                                        В&nbsp;общем место нам с&nbsp;девушкой офигенно понравилось! Идеально зашло под наши цели!
+                                        Впереди совместный номер ^_^
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="media-content">
-                                    <p class="title is-4 no-padding">Okinami</p>
-                                    <p><span class="title is-6"><a href="http://twitter.com/#">@twitterid</a></span></p>
-                                    <p class="subtitle is-6">Lead Developer</p>
+                                <div class="card">
+                                    <div class="card-content">
+                                        <div class="media">
+                                            <div class="media-left">
+                                                <figure class="image is-64x64">
+                                                    <img src="img/avatars/girl.png" alt="Image">
+                                                </figure>
+                                            </div>
+                                            <div class="media-content">
+                                                <p class="title is-4 no-padding">Юлия Пономарева</p>
+                                                <p class="subtitle is-6 rating">
+                                                <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="content">
+Моей дочке 5&nbsp;лет, она занимается в&nbsp;младшей группе. Ей&nbsp;очень нравятся тренировки, настолько, что даже по&nbsp;вечерам она все время занимается и&nbsp;занимается: мостики, шпагаты, кувырки, колесо, &laquo;шассе-шассе-шаг-прыжок&raquo;, скакалка, мяч... Бедные наши соседи снизу! Даже в&nbsp;садике на&nbsp;прогулке в&nbsp;зимней куртке и&nbsp;в&nbsp;теплых штанищах на&nbsp;шпагатах сидит, колесо делает, повороты отрабатывает. Ну&nbsp;и&nbsp;результат, конечно, заметен. Пришли мы&nbsp;4&nbsp;месяца назад довольно пухлыми, сейчас даже очень и&nbsp;очень стройные. После каждой! тренировки было заметно, как она стройнеет. И&nbsp;на&nbsp;утреннике в&nbsp;садике было видно, как она отличается от&nbsp;других: собранность, сосредоточенность, осанка, точность движений, ловкость. Тренировки в&nbsp;группе разнообразные, интересные. Тренеры профессиональные, хорошо очень ладят с&nbsp;детьми, рассказывают, показывают, подробно объясняют, следят за&nbsp;СОБЛЮДЕНИЕМ ТЕХНИКИ БЕЗОПАСНОСТИ.
+                                        </div>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="content">
-                                The Beast stumbled in the dark for it could no longer see the path. It started to
-                                fracture and weaken, trying to reshape itself into the form of metal. Even the witches
-                                would no longer lay eyes upon it, for it had become hideous and twisted.
-                                <div class="background-icon"><span class="icon-twitter"></span></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="column is-one-third">
-                    <div class="card large">
-                        <div class="card-content">
-                            <div class="media">
-                                <div class="media-left">
-                                    <figure class="image is-96x96">
-                                        <img src="https://cdn.discordapp.com/avatars/244932903530659841/0c924a19fcf1b5c59bc9dc1b58b61bb0.jpg?size=1024"
-                                             alt="Image">
-                                    </figure>
+                                <div class="card">
+                                    <div class="card-content">
+                                        <div class="media">
+                                            <div class="media-left">
+                                                <figure class="image is-64x64">
+                                                    <img src="img/avatars/natalia_kachina_64x64.jpg" alt="Image">
+                                                </figure>
+                                            </div>
+                                            <div class="media-content">
+                                                <p class="title is-4 no-padding">Наталия Качина</p>
+                                                <p class="subtitle is-6 rating">
+                                                <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="content">
+                                        Занимаемся вместе с&nbsp;молодым человеком и&nbsp;оба в&nbsp;полном восторге. На&nbsp;самом деле не&nbsp;ожидала. что мне так понравится, решила попробовать.&nbsp;а&nbsp;там, как пойдет. Заниматься гимнастикой я&nbsp;начала уже во&nbsp;взрослом возрасте не&nbsp;имея особой физической подготовки для этого, да&nbsp;и&nbsp;вообще тело было довольно инертно и&nbsp;очень любило комфорт. Но&nbsp;вытащив себя из&nbsp;привычных комфортных рамок, обнаружила в&nbsp;себе много нового, недавно наткнулась на&nbsp;цитату, с&nbsp;которой полностью согласна: &laquo;Каждая победа, одержанная над собой, означает новую силу для обретения ещё больших побед&raquo;. И&nbsp;гимнастика&nbsp;&mdash; это постоянные победы над собой. И&nbsp;я&nbsp;замечаю, как эти победы над инертностью в&nbsp;теле, над страхами, что не&nbsp;получится или перед какими-то элементами, они дают мне больше решительности на&nbsp;то, чтобы и&nbsp;в&nbsp;других областях пробовать новое, открывать новые грани себя и&nbsp;своих возможностей. Это очень здорово! С&nbsp;психологического плана порой начать сложнее, с&nbsp;тела проще начать побеждать. Развивая сосредоточенность, волю на&nbsp;тренировке, она развивается в&nbsp;жизни в&nbsp;целом и&nbsp;помогает преодолевать многое.
+                                        Именно это место мне нравится своим подходом, тут нет никаких рамок и&nbsp;ограничений по&nbsp;подготовке, полу, возрасту. Подход бережный, не&nbsp;ломают, но&nbsp;необходимая строгость соблюдается, потому что иначе наше тело начнет ведь филонить, искать возможности не&nbsp;напрягаться. Есть работа с&nbsp;предметом, потолки высокие, вообще места хватает, удобно. Развитие идет интенсивно и&nbsp;интересно, все время какая-то новизна, уходишь с&nbsp;тренировки уставший, но&nbsp;одержавший победу над собой.
+                                        Побед в&nbsp;гимнастике много, и&nbsp;я&nbsp;заметила, что благодаря&nbsp;ей, лучше получаться стало многое.
+                                        Попробуйте и&nbsp;вы, вдруг и&nbsp;вам понравится?
+                                        Для детей это тоже замечательно, ведь когда ребенок уже с&nbsp;детства привыкает одерживать победы над собой и&nbsp;отваживаться на&nbsp;большее, то&nbsp;ему и&nbsp;по&nbsp;жизни дальше будет проще и&nbsp;интереснее, он&nbsp;будет победителем и&nbsp;сможет раскрыть множество своих возможностей и&nbsp;талантов. Это потрясающе!
+                                        В&nbsp;общем решайтесь на&nbsp;все, что хотели попробовать, никогда не&nbsp;поздно!
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="media-content">
-                                    <p class="title is-4 no-padding">McSocks</p>
-                                    <p><span class="title is-6"><a href="http://twitter.com/#">@twitterid</a></span></p>
-                                    <p class="subtitle is-6">Developer</p>
-                                </div>
-                            </div>
-                            <div class="content">
-                                The soul of the Beast seemed lost forever. Then, by the full moon's light, a child was
-                                born; child with the unbridled soul of the Beast that would make all others pale in
-                                comparison.
-                                <div class="background-icon"><span class="icon-facebook"></span></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="column is-one-third">
-                    <div class="card large">
-                        <div class="card-content">
-                            <div class="media">
-                                <div class="media-left">
-                                    <figure class="image is-96x96">
-                                        <img src="https://i.imgsafe.org/a5/a5e978ce20.jpeg" alt="Image">
-                                    </figure>
-                                </div>
-                                <div class="media-content">
-                                    <p class="title is-4 no-padding">The Conceptionist</p>
-                                    <p><span class="title is-6"><a href="http://twitter.com/#">@twitterid</a></span></p>
-                                    <p class="subtitle is-6">Developer</p>
-                                </div>
-                            </div>
-                            <div class="content">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum consequatur numquam
-                                aliquam tenetur ad amet inventore hic beatae, quas accusantium perferendis sapiente
-                                explicabo, corporis totam! Labore reprehenderit beatae magnam animi!
-                                <div class="background-icon"><span class="icon-barcode"></span></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- End Developers -->
-            <!-- End Staff -->
         </div>
     </div>
-
+              				<!-- End Carousel -->
+              				</div>
+</div>
 </section>
 <!--ADDRESSES SECTION-->
 <section class="section screen container" id="findus-section">
@@ -440,6 +501,7 @@ HERE BE MODALS
 ===============
 -->
 <!--KIDS SCHEDULE MODAL-->
+
 <div id="modal-schedule-kids" class="modal modal-full-screen modal-fx-fadeInScale">
     <div class="modal-background"></div>
     <div class="modal-content modal-card">
@@ -488,5 +550,12 @@ HERE BE MODALS
         </section>
     </div>
 </div>
+
+    <script>
+    		bulmaCarousel.attach('#carousel-demo', {
+    			slidesToScroll: 1,
+    			slidesToShow: 2
+    		});
+    		</script>
 </body>
 </html>
