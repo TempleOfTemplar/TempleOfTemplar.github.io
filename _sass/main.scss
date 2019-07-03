@@ -27,16 +27,29 @@ $primary-invert: $pink-invert;
 // 4. Import the rest of Bulma
 */
 $primary: #f5a83c;
+$tabs-link-color: #fff;
+$tabs-border-bottom-width: 2px;
+$tabs-link-padding: 0.25em 0.5em;
 @import "../node_modules/bulma/bulma";
 
 #hero-section {
   background-image: url("../img/fon_1.png"), linear-gradient(#FFFFFF, #FCFCFC, #EDF03E, #FCFCFC, #FFFFFF);
   background-size: 100%;
   background-repeat: no-repeat;
+  padding: 30px 0;
 }
 
+
+#navbarMenu {
+  align-self: flex-end;
+  justify-content: center;
+}
 #hero-columns {
   display: flex;
+}
+
+#mainForm {
+  margin-top: 30px;
 }
 
 @media screen and (max-width: $tablet - 1px) {
@@ -65,7 +78,10 @@ $primary: #f5a83c;
 }
 
 .contact_phone {
-
+  color: $white;
+  font-size: 24px;
+  line-height: 24px;
+  vertical-align: middle;
 }
 
 .contact_phone__mobile {
@@ -84,11 +100,20 @@ $primary: #f5a83c;
   padding-left: 0.5rem;
 }
 
-.social-block__mobile a {
-
-  //display: flex;
+.social-block {
+  display: flex;
+  padding-left: 0.5rem;
 }
 
+.social-block > a > img {
+  display: block;
+  width: 32px;
+  height: 32px;
+  max-height: 32px;
+  max-width: 32px;
+}
+
+.social-block a + a,
 .social-block__mobile a + a {
   padding-left: 0.5rem;
 }
@@ -108,11 +133,33 @@ $primary: #f5a83c;
 
 .phone-icon,
 .phone-number {
-
   vertical-align: middle;
   display: inline-block;
 }
 
 .phone-icon + .phone-number {
   margin-left: 0.25rem;
+}
+
+.navbar-title-wrapper {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.navbar-subtitle {
+  color: $white;
+  font-size: 17px;
+  line-height: 15px;
+}
+
+.navbar-maintitle {
+  color: $white;
+  font-size: 23px;
+  line-height: 21px;
+}
+
+.main-title {
+
 }

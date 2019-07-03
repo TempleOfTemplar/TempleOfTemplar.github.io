@@ -5178,12 +5178,12 @@ label.panel-block {
     align-items: center;
     border-bottom-color: #dbdbdb;
     border-bottom-style: solid;
-    border-bottom-width: 1px;
-    color: #4a4a4a;
+    border-bottom-width: 2px;
+    color: #fff;
     display: flex;
     justify-content: center;
-    margin-bottom: -1px;
-    padding: 0.5em 1em;
+    margin-bottom: -2px;
+    padding: 0.25em 0.5em;
     vertical-align: top; }
     .tabs a:hover {
       border-bottom-color: #363636;
@@ -5197,7 +5197,7 @@ label.panel-block {
     align-items: center;
     border-bottom-color: #dbdbdb;
     border-bottom-style: solid;
-    border-bottom-width: 1px;
+    border-bottom-width: 2px;
     display: flex;
     flex-grow: 1;
     flex-shrink: 0;
@@ -6980,10 +6980,18 @@ label.panel-block {
 #hero-section {
   background-image: url("../img/fon_1.png"), linear-gradient(#FFFFFF, #FCFCFC, #EDF03E, #FCFCFC, #FFFFFF);
   background-size: 100%;
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+  padding: 30px 0; }
+
+#navbarMenu {
+  align-self: flex-end;
+  justify-content: center; }
 
 #hero-columns {
   display: flex; }
+
+#mainForm {
+  margin-top: 30px; }
 
 @media screen and (max-width: 768px) {
   #hero-columns {
@@ -7005,6 +7013,12 @@ label.panel-block {
 .logo img {
   max-height: 52px; }
 
+.contact_phone {
+  color: white;
+  font-size: 24px;
+  line-height: 24px;
+  vertical-align: middle; }
+
 .contact_phone__mobile {
   color: white;
   font-size: 24px;
@@ -7018,6 +7032,18 @@ label.panel-block {
   display: flex;
   padding-left: 0.5rem; }
 
+.social-block {
+  display: flex;
+  padding-left: 0.5rem; }
+
+.social-block > a > img {
+  display: block;
+  width: 32px;
+  height: 32px;
+  max-height: 32px;
+  max-width: 32px; }
+
+.social-block a + a,
 .social-block__mobile a + a {
   padding-left: 0.5rem; }
 
@@ -7039,3 +7065,19 @@ label.panel-block {
 
 .phone-icon + .phone-number {
   margin-left: 0.25rem; }
+
+.navbar-title-wrapper {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center; }
+
+.navbar-subtitle {
+  color: white;
+  font-size: 17px;
+  line-height: 15px; }
+
+.navbar-maintitle {
+  color: white;
+  font-size: 23px;
+  line-height: 21px; }
