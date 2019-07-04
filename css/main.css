@@ -6960,21 +6960,25 @@ label.panel-block {
   background-image: url("../img/fon_1.png"), linear-gradient(#FFFFFF, #FCFCFC, #EDF03E, #FCFCFC, #FFFFFF);
   background-size: 100%;
   background-repeat: no-repeat;
-  padding: 30px 0; }
+  margin-top: -52px;
+  padding-top: 52px; }
 
 #navbarMenu {
   align-self: flex-end;
   justify-content: center; }
 
+/*
 #hero-columns {
-  display: flex; }
-
+  display: flex;
+}
+@media screen and (max-width: $tablet - 1px) {
+  #hero-columns {
+    flex-direction: column-reverse;
+  }
+}
+*/
 #mainForm {
   margin-top: 30px; }
-
-@media screen and (max-width: 768px) {
-  #hero-columns {
-    flex-direction: column-reverse; } }
 
 .modal-card-head,
 .modal-card-foot {
@@ -7065,11 +7069,14 @@ label.panel-block {
   color: #23d160;
   font-size: 5rem; }
 
-.reviews {
-  overflow: hidden; }
-
 .reviews .card {
   box-shadow: none; }
 
 .rating {
   color: #ffc84b; }
+
+.slick-prev,
+.slick-next,
+.slick-prev:before,
+.slick-next:before {
+  color: #fb9744 !important; }

@@ -46,7 +46,8 @@ $navbar-background-color: $basic-orange;
   background-image: url("../img/fon_1.png"), linear-gradient(#FFFFFF, #FCFCFC, #EDF03E, #FCFCFC, #FFFFFF);
   background-size: 100%;
   background-repeat: no-repeat;
-  padding: 30px 0;
+  margin-top: -52px;
+  padding-top: 52px;
 }
 
 
@@ -54,19 +55,22 @@ $navbar-background-color: $basic-orange;
   align-self: flex-end;
   justify-content: center;
 }
+/*
 #hero-columns {
   display: flex;
 }
-
-#mainForm {
-  margin-top: 30px;
-}
-
 @media screen and (max-width: $tablet - 1px) {
   #hero-columns {
     flex-direction: column-reverse;
   }
 }
+*/
+
+#mainForm {
+  margin-top: 30px;
+}
+
+
 
 .modal-card-head, .modal-card-foot {
   justify-content: space-between;
@@ -180,7 +184,6 @@ $navbar-background-color: $basic-orange;
 }
 
 .reviews {
-  overflow: hidden;
 }
 
 .reviews .card {
@@ -189,4 +192,12 @@ $navbar-background-color: $basic-orange;
 
 .rating {
   color: #ffc84b;
+}
+
+.slick-prev,
+.slick-next,
+.slick-prev:before,
+.slick-next:before
+{
+  color: $basic-orange !important;
 }

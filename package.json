@@ -40,9 +40,11 @@
     "babel-preset-env": "^1.7.0",
     "babel-preset-es2015-ie": "^6.7.0",
     "bulma": "^0.7.5",
+    "cash-dom": "^4.1.2",
     "node-sass": "^4.12.0",
     "npm-run-all": "^4.1.5",
-    "postcss-cli": "^6.1.2"
+    "postcss-cli": "^6.1.2",
+    "smooth-scroll": "^16.1.0"
   },
   "homepage": "https://github.com/jgthms/bulma-start#readme",
   "keywords": [
@@ -69,6 +71,7 @@
   },
   "version": "0.0.3",
   "dependencies": {
-    "bulma-carousel": "^4.0.4"
+    "bulma-carousel": "^4.0.4",
+    "gumshoejs": "^5.1.1"
   }
 }

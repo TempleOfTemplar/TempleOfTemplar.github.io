@@ -1,561 +1,564 @@
 <!DOCTYPE html>
 <html lang="ru" class="has-navbar-fixed-top">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>My first Bulma website</title>
-    <link rel="stylesheet" href="css/main.css">
-    <script async type="text/javascript" src="lib/bulma.js"></script>
-    <script src="https://unpkg.com/ionicons@4.4.7/dist/ionicons.js"></script>
-    <!--modal-fx-->
-    <!--<link rel="stylesheet" href="/node_modules/bulma-modal-fx/dist/css/modal-fx.min.css">-->
-    <!--<script defer src="/node_modules/bulma-modal-fx/dist/js/modal-fx.min.js"></script>-->
-    <link rel="stylesheet" href="css/modal-fx.min.css">
-    <script defer src="lib/modal-fx.min.js"></script>
-    <script src="lib/gumshoe.min.js"></script>
-    <!--carousel-->
-    <link rel="stylesheet" href="lib/bulma-carousel/bulma-carousel.min.css">
-    <script type="text/javascript" src="lib/bulma-carousel/bulma-carousel.min.js"></script>
-    <!--<link rel="stylesheet" href="css/bulma-carousel.min.css">-->
-    <!--<script type="text/javascript" src="lib/bulma-carousel.min.js"></script>-->
-    <!--<link href="css/ionicons.min.css" rel="stylesheet">-->
-    <!--<script src="lib/ionicons.js"></script>-->
-</head>
-<body>
-<!--NAVBAR-->
-<nav class="navbar is-primary is-fixed-top" data-gumshoe-header>
-    <div class="container">
-        <div class="navbar-brand">
-            <a class="navbar-item logo" href="../">
-                <img src="img/logo-150x150.jpg"/>
-                <!-- <img src="http://bulma.io/images/bulma-type-white.png" alt="Logo">-->
-            </a>
-
-                 <div class="navbar-item mobile-contacts is-hidden-desktop">
-                                   <a class="contact_phone__mobile" href="tel:207-12-37">
-                                   <ion-icon class="vcentered-icon phone-icon" name="call"></ion-icon>
-                                   <span class="phone-number">207-12-37</span>
-                                   </a>
-                                          <div class="social-block__mobile">
-                                  			  <a href="https://vk.com/na_gimnastike"><img class="social" src="img/vk.svg" alt="vk" title="vk"></a>
-                                  			  <a href="https://www.instagram.com/na_gimnastike/"><img class="social" src="img/instagram.svg" alt="instagram" title="instagram"></a>
-                                  	    </div>
-                                  </div>
-
-
-            <span class="navbar-burger burger" data-target="navbarMenu">
-                                <span></span>
-                                <span></span>
-                                <span></span>
-            </span>
-        </div>
-          <div class="navbar-item navbar-title-wrapper is-hidden-touch">
-          <span class="navbar-subtitle">центр гимнастики</span>
-          <span class="navbar-maintitle">«Авис-спорт»</span>
-</div>
-        <div id="navbarMenu" class="navbar-menu">
-                <div class="tabs is-large is-fullwidth is-centered">
-                    <ul data-gumshoe>
-                        <li><a href="#hero-section">Главная</a></li>
-                        <li><a href="#cards-section">Группы</a></li>
-                        <li><a href="#teachers-section">Преподаватели</a></li>
-                        <li><a href="#about-section">О нас</a></li>
-                        <li><a href="#reviews-section">Отзывы</a></li>
-                        <li><a href="#findus-section">Адреса</a></li>
-                    </ul>
-                </div>
-        </div>
-
-        <div class="navbar-end is-hidden-touch">
-                      <div class="navbar-item">
-                                     <a class="contact_phone" href="tel:207-12-37">
-                                                           <ion-icon class="vcentered-icon phone-icon" name="call"></ion-icon>
-                                                           <span class="phone-number">207-12-37</span>
-                                                           </a>
-                                           <div class="social-block">
-                                    			  <a href="https://vk.com/na_gimnastike"><img class="social" src="img/vk.svg" alt="vk" title="vk"></a>
-                                    			  <a href="https://www.instagram.com/na_gimnastike/"><img class="social" src="img/instagram.svg" alt="instagram" title="instagram"></a>
-                                    	    </div>
-                      </div>
-              </div>
-
-    </div>
-</nav>
-<!--HERO + CONTACT FORM SECTION-->
-<section class="screen hero" id="hero-section">
-        <div class="container has-text-centered">
-         <h1 class="is-size-3 main-title has-text-weight-bold">Художественная гимнастика для детей и взрослых</h1>
-            <div class="columns is-vcentered" id="hero-columns">
-                <div class="column is-6">
-                    <div class="box" id="mainForm">
-                        <!-- Contact -->
-                        <div class="section-heading">
-                            <h3 class="title is-4">Хочу записаться!</h3>
-                        </div>
-                        <br>
-
-                        <form action="">
-                            <!--NAME FIELD-->
-                            <div class="field is-horizontal">
-                                <div class="field-label is-normal">
-                                    <label class="label">Имя</label>
-                                </div>
-                                <div class="field-body">
-                                    <div class="field">
-                                        <div class="control has-icons-left">
-                                            <input class="input is-success" type="text" placeholder="Имя">
-                                            <span class="icon is-small is-left">
-      <ion-icon name="person"></ion-icon>
-    </span>
-                                        </div>
-                                        <p class="help is-success">
-                                            This field is required
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <!--PHONE FIELD-->
-                            <div class="field is-horizontal">
-                                <div class="field-label is-normal">
-                                    <label class="label">Телефон</label>
-                                </div>
-                                <div class="field-body">
-                                    <div class="field">
-                                        <div class="control has-icons-left">
-                                            <input class="input is-danger" type="text" placeholder="+7 XXX XXXXXXX">
-                                            <span class="icon is-small is-left">
-     <ion-icon name="call"></ion-icon>
-    </span>
-                                        </div>
-                                        <p class="help is-danger">
-                                            This field is required
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <!--EMAIL FIELD-->
-                            <div class="field is-horizontal">
-                                <div class="field-label is-normal">
-                                    <label class="label">Email</label>
-                                </div>
-                                <div class="field-body">
-                                    <div class="field">
-                                        <div class="control has-icons-left">
-                                            <input class="input is-danger" type="email" placeholder="Ваш e-mail">
-                                            <span class="icon is-small is-left">
-     <ion-icon name="mail"></ion-icon>
-    </span>
-                                        </div>
-                                        <p class="help is-danger">
-                                            This email is invalid
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <!--MESSAGE FIELD-->
-                            <div class="field is-horizontal">
-                                <div class="field-label is-normal">
-                                    <label class="label">Сообщение</label>
-                                </div>
-                                <div class="field-body">
-                                    <div class="field">
-                                        <div class="control">
-                                            <textarea class="textarea" placeholder=""></textarea>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!--CHECKBOX FIELD-->
-                            <div class="field is-horizontal">
-                                <div class="field-label">
-                                    <label class="label"></label>
-                                </div>
-                                <div class="field-body">
-                                    <div class="field is-narrow">
-                                        <div class="control">
-                                            <label class="checkbox">
-                                                <input type="checkbox">
-                                                Я соглашаюсь на передачу персональных данных согласно <a href="#"
-                                                                                                         class="is-link">политике
-                                                конфиденциальности</a> и <a href="#" class="is-link">пользовательскому
-                                                соглашению</a>
-                                            </label>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!--SUBMIT BUTTION-->
-                            <div class="field is-horizontal">
-                                <div class="field-label">
-                                    <!-- Left empty for spacing -->
-                                </div>
-                                <div class="field-body">
-                                    <div class="field">
-                                        <div class="control">
-                                            <button class="button is-primary is-fullwidth">
-                                               Получить скидку
-                                            </button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-                <div class="column is-6">
-                    <figure class="image is-hidden-mobile">
-                        <img src="img/girl_1.png" alt="Description">
-                    </figure>
-                </div>
-            </div>
-
-
-            <div class="columns">
-              <div class="column">
-                  <div class="box">
-                      <ion-icon class="check-icon" name="checkmark-circle-outline"></ion-icon>
-                      <p class="is-size-2 is-size-4-mobile">Опытные тренеры!</p>
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <title>My first Bulma website</title>
+      <link rel="stylesheet" href="css/main.css">
+      <script src="https://unpkg.com/ionicons@4.4.7/dist/ionicons.js"></script>
+      <!--modal-fx-->
+      <!--<link rel="stylesheet" href="/node_modules/bulma-modal-fx/dist/css/modal-fx.min.css">-->
+      <!--<script defer src="/node_modules/bulma-modal-fx/dist/js/modal-fx.min.js"></script>-->
+      <link rel="stylesheet" href="lib/slick/slick.css">
+      <link rel="stylesheet" href="lib/slick/slick-theme.css">
+      <link rel="stylesheet" href="lib/magnific-popup/magnific-popup.css">
+      <!--carousel-->
+      <!--
+         <link rel="stylesheet" href="lib/bulma-carousel/bulma-carousel.min.css">
+         <script type="text/javascript" src="lib/bulma-carousel/bulma-carousel.min.js"></script>
+         -->
+      <!--<link rel="stylesheet" href="css/bulma-carousel.min.css">-->
+      <!--<script type="text/javascript" src="lib/bulma-carousel.min.js"></script>-->
+      <!--<link href="css/ionicons.min.css" rel="stylesheet">-->
+      <!--<script src="lib/ionicons.js"></script>-->
+   </head>
+   <body>
+      <!--NAVBAR-->
+      <nav class="navbar is-primary is-fixed-top">
+         <div class="container">
+            <div class="navbar-brand">
+               <a class="navbar-item logo" href="../">
+                  <img src="img/logo-150x150.jpg"/>
+                  <!-- <img src="http://bulma.io/images/bulma-type-white.png" alt="Logo">-->
+               </a>
+               <div class="navbar-item mobile-contacts is-hidden-desktop">
+                  <a class="contact_phone__mobile" href="tel:207-12-37">
+                     <ion-icon class="vcentered-icon phone-icon" name="call"></ion-icon>
+                     <span class="phone-number">207-12-37</span>
+                  </a>
+                  <div class="social-block__mobile">
+                     <a href="https://vk.com/na_gimnastike"><img class="social" src="img/vk.svg" alt="vk" title="vk"></a>
+                     <a href="https://www.instagram.com/na_gimnastike/"><img class="social" src="img/instagram.svg" alt="instagram" title="instagram"></a>
                   </div>
-              </div>
-
-              <div class="column">
-                                <div class="box">
-                                    <ion-icon  class="check-icon" name="checkmark-circle-outline"></ion-icon>
-                                    <p class="is-size-2 is-size-4-mobile">Без вреда здоровью!</p>
-                                </div>
-                            </div>
-
-                            <div class="column">
-                                              <div class="box">
-                                                  <ion-icon class="check-icon" name="checkmark-circle-outline"></ion-icon>
-                                                  <p class="is-size-2 is-size-4-mobile">Получится у всех!</p>
-                                              </div>
-                                          </div>
+               </div>
+               <span class="navbar-burger burger" data-target="navbarMenu">
+               <span></span>
+               <span></span>
+               <span></span>
+               </span>
             </div>
-        </div>
-
-
-
-</section>
-<!--TEACHERS SECTION-->
-<!--<section class="section screen container" id="teachers-section">-->
-<!--<div class="columns">-->
-<!--<div class="column is-4">-->
-
-<!--</div>-->
-<!--</div>-->
-<!--</section>-->
-<!--MODAL CARDS SECTION-->
-<!--
-<section class="section screen container" id="cards-section">
-    <div class="columns features">
-        <div class="column is-4">
-            <div class="card is-shady">
-                <div class="card-image">
-                    <figure class="image">
-                        <img src="img/for-small-kids_750x500.png" alt="Placeholder image" class="modal-button"
-                             data-target="modal-image2">
-                    </figure>
-                </div>
-                <div class="card-content">
-                    <div class="content">
-                        <p class="title">
-                            Младшая группа
-                        </p>
-                        <p class="subtitle">
-                            (от 3 до 7 лет)
-                        </p>
-                        <p>Занятия направлены на правильное физическое развитие малыша, улучшение координации,
-                            правильного формирования опорно-двигательного аппарата.
-                            Все занятия проходят в сопровождении родителей.</p>
-                        <span class="button is-link modal-button" data-target="modal-schedule-kids">Расписание</span>
-                    </div>
-                </div>
+            <div class="navbar-item navbar-title-wrapper is-hidden-touch">
+               <span class="navbar-subtitle">центр гимнастики</span>
+               <span class="navbar-maintitle">«Авис-спорт»</span>
             </div>
-        </div>
-
-        <div class="column is-4">
-            <div class="card is-shady">
-                <div class="card-image">
-                    <figure class="image">
-                        <img src="img/for-kids_750x500.png" alt="Placeholder image" class="modal-button"
-                             data-target="modal-image2">
-                    </figure>
-                </div>
-                <div class="card-content">
-                    <div class="content">
-                        <p class="title">
-                            Старшая группа
-                        </p>
-                        <p class="subtitle">
-                            (от 8 до 17 лет)
-                        </p>
-                        <p>Начало профессиональных занятий спортивной гимнастикой. Подготовка к соревнованиям. Наиболее
-                            выдающиеся ученики поступают на бюджетные места.
-                            Получение спортивных разрядов, участие в соревнованиях.</p>
-                        <span class="button is-link modal-button"
-                              data-target="modal-schedule-teenagers">Расписание</span>
-                    </div>
-                </div>
+            <div id="navbarMenu" class="navbar-menu">
+               <div class="tabs is-large is-fullwidth is-centered">
+                  <ul id="scrollspy-nav">
+                     <li><a href="#hero-section">Главная</a></li>
+                     <li><a href="#gallery-section">Галерея</a></li>
+                     <!--<li><a href="#cards-section">Группы</a></li>
+                        <li><a href="#teachers-section">Преподаватели</a></li>
+                        <li><a href="#about-section">О нас</a></li>-->
+                     <li><a href="#reviews-section">Отзывы</a></li>
+                     <li><a href="#findus-section">Адреса</a></li>
+                  </ul>
+               </div>
             </div>
-        </div>
-
-        <div class="column is-4">
-            <div class="card is-shady">
-                <div class="card-image">
-                    <figure class="image">
-                        <img src="img/for_adults_750x500.jpg" alt="Placeholder image">
-                    </figure>
-                </div>
-                <div class="card-content">
-                    <div class="content">
-                        <p class="title">
-                            Взрослая группа
-                        </p>
-                        <p class="subtitle">
-                            (без ограничений по возрасту)
-                        </p>
-                        <p>Программа занятий включает в себя следующие направления подготовки:</p>
-                        <ul>
-                            <li>общая физическая подготовка;</li>
-                            <li>специальная физическая подготовка (гибкость, растяжка);</li>
-                            <li>предметная подготовка (скакалка, мяч, обруч, булавы, лента);</li>
-                            <li>классическая хореография;</li>
-                            <li>основы акробатики;</li>
-                            <li>танцевальная подготовка;</li>
-                        </ul>
-                        <span class="button is-link modal-button" data-target="modal-schedule-adults">Расписание</span>
-                    </div>
-                </div>
+            <div class="navbar-end is-hidden-touch">
+               <div class="navbar-item">
+                  <a class="contact_phone" href="tel:207-12-37">
+                     <ion-icon class="vcentered-icon phone-icon" name="call"></ion-icon>
+                     <span class="phone-number">207-12-37</span>
+                  </a>
+                  <div class="social-block">
+                     <a href="https://vk.com/na_gimnastike"><img class="social" src="img/vk.svg" alt="vk" title="vk"></a>
+                     <a href="https://www.instagram.com/na_gimnastike/"><img class="social" src="img/instagram.svg" alt="instagram" title="instagram"></a>
+                  </div>
+               </div>
             </div>
-        </div>
-    </div>
-</section>
--->
-<!--ABOUT SECTION-->
-<!--<section class="section screen container" id="about-section">-->
-<!--<div class="columns">-->
-<!--<div class="column is-4">-->
-
-<!--</div>-->
-<!--</div>-->
-<!--</section>-->
-<!--REVIEWS SECTION-->
-<section class="section">
-<div class="container">
-    <h3 class="is-size-2">Отзывы</h3>
-
-<div class="reviews">
- <!-- Start Carousel -->
-    <div id="carousel-demo" class="carousel">
-                                <div class="card">
-                                    <div class="card-content">
-                                        <div class="media">
-                                            <div class="media-left">
-                                                <figure class="image is-64x64">
-                                                    <img src="img/avatars/alesa_avdeeva_64x64.jpg" alt="Image">
-                                                </figure>
-                                            </div>
-                                            <div class="media-content">
-                                                <p class="title is-4 no-padding">Алеся Авдеева</p>
-                                                <p class="subtitle is-6 rating">
-                                                <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
-                                                </p>
-                                            </div>
-                                        </div>
-                                        <div class="content">
-                                          Привели дочку на&nbsp;гимнастику в&nbsp;АВИС-СПОРТ в&nbsp;сентябре 2018, едва только исполнилось 4&nbsp;года. Переживали, как она будет переносить нагрузки. Важно было и&nbsp;то, какие отношения сложатся с&nbsp;тренером и&nbsp;другими детьми . Все сложилось замечательно, дочка бежит на&nbsp;тренировки в&nbsp;отличном настроении. После тренировок возвращается всегда с&nbsp;улыбкой. При этом тренировки достаточно сложные и&nbsp;энергозатратные. Родители имеют возможность присутствовать на&nbsp;занятиях и&nbsp;наблюдать за&nbsp;тренировочным процессом. Поэтому можно абсолютно четко сформировать мнение о&nbsp;том, насколько эффективно построено занятие и&nbsp;общение тренера с&nbsp;подопечными. Регулярно устраиваются открытые уроки, где дети показывают все, чему научились. Немаловажно и&nbsp;то, что численность ребят в&nbsp;группах небольшая, поэтому тренер уделяет максимум внимания каждому ученику.
-                                          Очень рады, что выбрали именно гимнастику и&nbsp;попали в&nbsp;АВИС-СПОРТ, будем тренироваться и&nbsp;дальше!
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="card">
-                                    <div class="card-content">
-                                        <div class="media">
-                                            <div class="media-left">
-                                                <figure class="image is-64x64">
-                                                    <img src="img/avatars/sonya_ryazanceva_64x64.jpg" alt="Image">
-                                                </figure>
-                                            </div>
-                                            <div class="media-content">
-                                                <p class="title is-4 no-padding">Соня Рязанцева</p>
-                                                <p class="subtitle is-6 rating">
-                                                <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
-                                                </p>
-                                            </div>
-                                        </div>
-                                        <div class="content">
-                                        Мне 13&nbsp;лет, я&nbsp;занимаюсь художественной гимнастикой в&nbsp;спорт-клубе &laquo;Avis-sport&raquo; Пришла примерно год назад, и&nbsp;уже многому научилась! Мне здесь очень нравиться заниматься! У&nbsp;тренера индивидуальный подход ко&nbsp;всем гимнасткам. Удобное время занятий, так что, можно совмещать гимнастику со&nbsp;школой. А&nbsp;так&nbsp;же я&nbsp;хожу на&nbsp;танцы, (они у&nbsp;меня шесть раз в&nbsp;неделю), и&nbsp;гимнастика очень помогает, появляется свобода движения. Мне нравится как нас растягивают, не&nbsp;больно, но&nbsp;эффективно. Учим новые элементы. Занимаемся с&nbsp;предметами. Очень хороший спортивный клуб!!!
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="card">
-                                    <div class="card-content">
-                                        <div class="media">
-                                            <div class="media-left">
-                                                <figure class="image is-64x64">
-                                                    <img src="img/avatars/mikhail_churakov_64x64.jpg" alt="Image">
-                                                </figure>
-                                            </div>
-                                            <div class="media-content">
-                                                <p class="title is-4 no-padding">Михаил Чураков</p>
-                                                <p class="subtitle is-6 rating">
-                                                <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
-                                                </p>
-                                            </div>
-                                        </div>
-                                        <div class="content">
-                                        Уже несколько лет вдвоем с&nbsp;девушкой занимаемся классическим танцем, и&nbsp;в&nbsp;какой-то момент поняли, что на&nbsp;многие элементы просто не&nbsp;хватает растяжки и&nbsp;сил в&nbsp;мышцах. Стали искать что-то, что хорошо сочеталось, и&nbsp;вот&nbsp;&mdash; узнали об&nbsp;этом месте от&nbsp;знакомых.
-                                        1) Здесь преподают по&nbsp;принципу &laquo;чтобы было в&nbsp;радость&raquo;, и&nbsp;похоже, что это действительно так. Никаких сверхчеловеческих усилий и&nbsp;&laquo;ломки&raquo;, все мягко и&nbsp;с&nbsp;любовью, но&nbsp;и&nbsp;никаких лишних поблажек&nbsp;&mdash; иначе откуда результаты?
-                                        2) Наверное единственное место в&nbsp;городе, где ведут занятия по&nbsp;худ. Гимнастике для взрослых! Без каких либо ограничений по&nbsp;возрасту, физической форме и&nbsp;даже полу!
-                                        3) Вполне адекватная ценовая политика. Учитывая, что занятия ведут реальные мастера спорта по&nbsp;Худ.Гимнастике&nbsp;&mdash; это вообще аттракцион невиданной щедрости с&nbsp;их&nbsp;стороны!
-
-                                        В&nbsp;общем место нам с&nbsp;девушкой офигенно понравилось! Идеально зашло под наши цели!
-                                        Впереди совместный номер ^_^
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="card">
-                                    <div class="card-content">
-                                        <div class="media">
-                                            <div class="media-left">
-                                                <figure class="image is-64x64">
-                                                    <img src="img/avatars/girl.png" alt="Image">
-                                                </figure>
-                                            </div>
-                                            <div class="media-content">
-                                                <p class="title is-4 no-padding">Юлия Пономарева</p>
-                                                <p class="subtitle is-6 rating">
-                                                <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
-                                                </p>
-                                            </div>
-                                        </div>
-                                        <div class="content">
-Моей дочке 5&nbsp;лет, она занимается в&nbsp;младшей группе. Ей&nbsp;очень нравятся тренировки, настолько, что даже по&nbsp;вечерам она все время занимается и&nbsp;занимается: мостики, шпагаты, кувырки, колесо, &laquo;шассе-шассе-шаг-прыжок&raquo;, скакалка, мяч... Бедные наши соседи снизу! Даже в&nbsp;садике на&nbsp;прогулке в&nbsp;зимней куртке и&nbsp;в&nbsp;теплых штанищах на&nbsp;шпагатах сидит, колесо делает, повороты отрабатывает. Ну&nbsp;и&nbsp;результат, конечно, заметен. Пришли мы&nbsp;4&nbsp;месяца назад довольно пухлыми, сейчас даже очень и&nbsp;очень стройные. После каждой! тренировки было заметно, как она стройнеет. И&nbsp;на&nbsp;утреннике в&nbsp;садике было видно, как она отличается от&nbsp;других: собранность, сосредоточенность, осанка, точность движений, ловкость. Тренировки в&nbsp;группе разнообразные, интересные. Тренеры профессиональные, хорошо очень ладят с&nbsp;детьми, рассказывают, показывают, подробно объясняют, следят за&nbsp;СОБЛЮДЕНИЕМ ТЕХНИКИ БЕЗОПАСНОСТИ.
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="card">
-                                    <div class="card-content">
-                                        <div class="media">
-                                            <div class="media-left">
-                                                <figure class="image is-64x64">
-                                                    <img src="img/avatars/natalia_kachina_64x64.jpg" alt="Image">
-                                                </figure>
-                                            </div>
-                                            <div class="media-content">
-                                                <p class="title is-4 no-padding">Наталия Качина</p>
-                                                <p class="subtitle is-6 rating">
-                                                <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
-                                                </p>
-                                            </div>
-                                        </div>
-                                        <div class="content">
-                                        Занимаемся вместе с&nbsp;молодым человеком и&nbsp;оба в&nbsp;полном восторге. На&nbsp;самом деле не&nbsp;ожидала. что мне так понравится, решила попробовать.&nbsp;а&nbsp;там, как пойдет. Заниматься гимнастикой я&nbsp;начала уже во&nbsp;взрослом возрасте не&nbsp;имея особой физической подготовки для этого, да&nbsp;и&nbsp;вообще тело было довольно инертно и&nbsp;очень любило комфорт. Но&nbsp;вытащив себя из&nbsp;привычных комфортных рамок, обнаружила в&nbsp;себе много нового, недавно наткнулась на&nbsp;цитату, с&nbsp;которой полностью согласна: &laquo;Каждая победа, одержанная над собой, означает новую силу для обретения ещё больших побед&raquo;. И&nbsp;гимнастика&nbsp;&mdash; это постоянные победы над собой. И&nbsp;я&nbsp;замечаю, как эти победы над инертностью в&nbsp;теле, над страхами, что не&nbsp;получится или перед какими-то элементами, они дают мне больше решительности на&nbsp;то, чтобы и&nbsp;в&nbsp;других областях пробовать новое, открывать новые грани себя и&nbsp;своих возможностей. Это очень здорово! С&nbsp;психологического плана порой начать сложнее, с&nbsp;тела проще начать побеждать. Развивая сосредоточенность, волю на&nbsp;тренировке, она развивается в&nbsp;жизни в&nbsp;целом и&nbsp;помогает преодолевать многое.
-                                        Именно это место мне нравится своим подходом, тут нет никаких рамок и&nbsp;ограничений по&nbsp;подготовке, полу, возрасту. Подход бережный, не&nbsp;ломают, но&nbsp;необходимая строгость соблюдается, потому что иначе наше тело начнет ведь филонить, искать возможности не&nbsp;напрягаться. Есть работа с&nbsp;предметом, потолки высокие, вообще места хватает, удобно. Развитие идет интенсивно и&nbsp;интересно, все время какая-то новизна, уходишь с&nbsp;тренировки уставший, но&nbsp;одержавший победу над собой.
-                                        Побед в&nbsp;гимнастике много, и&nbsp;я&nbsp;заметила, что благодаря&nbsp;ей, лучше получаться стало многое.
-                                        Попробуйте и&nbsp;вы, вдруг и&nbsp;вам понравится?
-                                        Для детей это тоже замечательно, ведь когда ребенок уже с&nbsp;детства привыкает одерживать победы над собой и&nbsp;отваживаться на&nbsp;большее, то&nbsp;ему и&nbsp;по&nbsp;жизни дальше будет проще и&nbsp;интереснее, он&nbsp;будет победителем и&nbsp;сможет раскрыть множество своих возможностей и&nbsp;талантов. Это потрясающе!
-                                        В&nbsp;общем решайтесь на&nbsp;все, что хотели попробовать, никогда не&nbsp;поздно!
-                                        </div>
-                                    </div>
-                                </div>
-        </div>
-    </div>
-              				<!-- End Carousel -->
-              				</div>
-</div>
-</section>
-<!--ADDRESSES SECTION-->
-<section class="section screen container" id="findus-section">
-<h3>Наши адреса</h3>
-<ul>
-    <li><strong>Ботаника: ул. Белинского, 222</strong></li>
-    <li><strong>Эльмаш: ул. Стачек, 3</strong></li>
-    <li><strong>г. Верхняя Пышма, ул. Кривоусова, 53Б</strong></li>
-    <li><strong>г. Березовский, Исакова, 7А</strong></li>
-</ul>
-    <script type="text/javascript" charset="utf-8" async
+         </div>
+      </nav>
+      <!--HERO + CONTACT FORM SECTION-->
+      <section class="screen hero" id="hero-section">
+         <div class="container has-text-centered">
+            <h1 class="is-size-3 main-title has-text-weight-bold">Художественная гимнастика для детей и взрослых</h1>
+            <div class="columns" id="hero-columns">
+               <div class="column is-6">
+                  <div class="box" id="mainForm">
+                     <!-- Contact -->
+                     <div class="section-heading">
+                        <h3 class="title is-4">Хочу записаться!</h3>
+                     </div>
+                     <br>
+                     <form action="">
+                        <!--NAME FIELD-->
+                        <div class="field is-horizontal">
+                           <div class="field-label is-normal">
+                              <label class="label">Имя</label>
+                           </div>
+                           <div class="field-body">
+                              <div class="field">
+                                 <div class="control has-icons-left">
+                                    <input class="input is-success" type="text" placeholder="Имя">
+                                    <span class="icon is-small is-left">
+                                       <ion-icon name="person"></ion-icon>
+                                    </span>
+                                 </div>
+                                 <p class="help is-success">
+                                    This field is required
+                                 </p>
+                              </div>
+                           </div>
+                        </div>
+                        <!--PHONE FIELD-->
+                        <div class="field is-horizontal">
+                           <div class="field-label is-normal">
+                              <label class="label">Телефон</label>
+                           </div>
+                           <div class="field-body">
+                              <div class="field">
+                                 <div class="control has-icons-left">
+                                    <input class="input is-danger" type="text" placeholder="+7 XXX XXXXXXX">
+                                    <span class="icon is-small is-left">
+                                       <ion-icon name="call"></ion-icon>
+                                    </span>
+                                 </div>
+                                 <p class="help is-danger">
+                                    This field is required
+                                 </p>
+                              </div>
+                           </div>
+                        </div>
+                        <!--CHECKBOX FIELD-->
+                        <div class="field is-horizontal">
+                           <div class="field-label">
+                              <label class="label"></label>
+                           </div>
+                           <div class="field-body">
+                              <div class="field is-narrow">
+                                 <div class="control">
+                                    <label class="checkbox">
+                                    <input type="checkbox">
+                                    Я соглашаюсь на передачу персональных данных согласно <a href="#"
+                                       class="is-link">политике
+                                    конфиденциальности</a> и <a href="#" class="is-link">пользовательскому
+                                    соглашению</a>
+                                    </label>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <!--SUBMIT BUTTION-->
+                        <div class="field is-horizontal">
+                           <div class="field-label">
+                              <!-- Left empty for spacing -->
+                           </div>
+                           <div class="field-body">
+                              <div class="field">
+                                 <div class="control">
+                                    <button class="button is-primary is-fullwidth">
+                                    Получить скидку
+                                    </button>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </form>
+                  </div>
+               </div>
+               <div class="column is-6">
+                  <figure class="image is-hidden-mobile">
+                     <img src="img/girl_1.png" alt="Description">
+                  </figure>
+               </div>
+            </div>
+         </div>
+      </section>
+      <section class="section">
+         <div class="container">
+            <div class="columns">
+               <div class="column">
+                  <div class="box">
+                     <ion-icon class="check-icon" name="checkmark-circle-outline"></ion-icon>
+                     <p class="is-size-2 is-size-4-mobile">Опытные тренеры!</p>
+                  </div>
+               </div>
+               <div class="column">
+                  <div class="box">
+                     <ion-icon  class="check-icon" name="checkmark-circle-outline"></ion-icon>
+                     <p class="is-size-2 is-size-4-mobile">Без вреда здоровью!</p>
+                  </div>
+               </div>
+               <div class="column">
+                  <div class="box">
+                     <ion-icon class="check-icon" name="checkmark-circle-outline"></ion-icon>
+                     <p class="is-size-2 is-size-4-mobile">Получится у всех!</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <section  id="gallery-section" class="section">
+         <div class="container">
+            <div class="column">
+               <h3 class="is-size-3">Тренировочный процесс</h3>
+               <div id="pupils-gallery">
+                  <div class="slider-item magnific-popup-item">
+                     <a href="img/training-process/28.jpg" title="3jBBlDlIO1A.jpg">
+                     <img class="" src="img/training-process/28.jpg" alt="3jBBlDlIO1A.jpg" title="3jBBlDlIO1A.jpg">
+                     </a>
+                  </div>
+                  <div class="slider-item magnific-popup-item">
+                     <a href="img/training-process/29.jpg" title="_Uow3eEK3dg.jpg">
+                     <img class="" src="img/training-process/29.jpg" alt="_Uow3eEK3dg.jpg" title="_Uow3eEK3dg.jpg">
+                     </a>
+                  </div>
+                  <div class="slider-item magnific-popup-item">
+                     <a href="img/training-process/30.jpg" title="fZCRP51Aikw.jpg">
+                     <img class="" src="img/training-process/30.jpg" alt="fZCRP51Aikw.jpg" title="fZCRP51Aikw.jpg">
+                     </a>
+                  </div>
+                  <div class="slider-item magnific-popup-item">
+                     <a href="img/training-process/31.jpg" title="IMG_20181028_161214.jpg">
+                     <img class="" src="img/training-process/31.jpg" alt="IMG_20181028_161214.jpg" title="IMG_20181028_161214.jpg">
+                     </a>
+                  </div>
+                  <div class="slider-item magnific-popup-item">
+                     <a href="img/training-process/32.jpg" title="20190602_040307.jpg">
+                     <img class="" src="img/training-process/32.jpg" alt="20190602_040307.jpg" title="20190602_040307.jpg">
+                     </a>
+                  </div>
+                  <div class="slider-item magnific-popup-item">
+                     <a href="img/training-process/33.jpg" title="IMG_20190113_212804.jpg">
+                     <img class="" src="img/training-process/33.jpg" alt="IMG_20190113_212804.jpg" title="IMG_20190113_212804.jpg">
+                     </a>
+                  </div>
+                  <div class="slider-item magnific-popup-item">
+                     <a href="img/training-process/34.jpg" title="IMG_20190120_221603.jpg">
+                     <img class="" src="img/training-process/34.jpg" alt="IMG_20190120_221603.jpg" title="IMG_20190120_221603.jpg">
+                     </a>
+                  </div>
+                  <div class="slider-item magnific-popup-item">
+                     <a href="img/training-process/35.jpg" title="IMG_20190212_190536.jpg">
+                     <img class="" src="img/training-process/35.jpg" alt="IMG_20190212_190536.jpg" title="IMG_20190212_190536.jpg">
+                     </a>
+                  </div>
+                  <div class="slider-item magnific-popup-item">
+                     <a href="img/training-process/36.jpg" title="IMG_20190211_190010.jpg">
+                     <img class="" src="img/training-process/36.jpg" alt="IMG_20190211_190010.jpg" title="IMG_20190211_190010.jpg">
+                     </a>
+                  </div>
+                  <div class="slider-item magnific-popup-item">
+                     <a href="img/training-process/37.jpg" title="IMG_20190227_222953.jpg">
+                     <img class="" src="img/training-process/37.jpg" alt="IMG_20190227_222953.jpg" title="IMG_20190227_222953.jpg">
+                     </a>
+                  </div>
+                  <div class="slider-item magnific-popup-item">
+                     <a href="img/training-process/38.jpg" title="IMG_20190210_191716.jpg">
+                     <img class="" src="img/training-process/38.jpg" alt="IMG_20190210_191716.jpg" title="IMG_20190210_191716.jpg">
+                     </a>
+                  </div>
+                  <div class="slider-item magnific-popup-item">
+                     <a href="img/training-process/39.jpg" title="IMG_20190228_175106.jpg">
+                     <img class="" src="img/training-process/39.jpg" alt="IMG_20190228_175106.jpg" title="IMG_20190228_175106.jpg">
+                     </a>
+                  </div>
+                  <div class="slider-item magnific-popup-item">
+                     <a href="img/training-process/40.jpg" title="IMG_20190306_174551.jpg">
+                     <img class="" src="img/training-process/40.jpg" alt="IMG_20190306_174551.jpg" title="IMG_20190306_174551.jpg">
+                     </a>
+                  </div>
+                  <div class="slider-item magnific-popup-item">
+                     <a href="img/training-process/41.jpg" title="IMG_20190316_073506.jpg">
+                     <img class="" src="img/training-process/41.jpg" alt="IMG_20190316_073506.jpg" title="IMG_20190316_073506.jpg">
+                     </a>
+                  </div>
+                  <div class="slider-item magnific-popup-item">
+                     <a href="img/training-process/42.jpg" title="IMG_20190325_211546.jpg">
+                     <img class="" src="img/training-process/42.jpg" alt="IMG_20190325_211546.jpg" title="IMG_20190325_211546.jpg">
+                     </a>
+                  </div>
+                  <div class="slider-item magnific-popup-item">
+                     <a href="img/training-process/43.jpg" title="IMG_20190324_160637.jpg">
+                     <img class="" src="img/training-process/43.jpg" alt="IMG_20190324_160637.jpg" title="IMG_20190324_160637.jpg">
+                     </a>
+                  </div>
+                  <div class="slider-item magnific-popup-item">
+                     <a href="img/training-process/44.jpg" title="IMG_20190409_214507.jpg">
+                     <img class="" src="img/training-process/44.jpg" alt="IMG_20190409_214507.jpg" title="IMG_20190409_214507.jpg">
+                     </a>
+                  </div>
+                  <div class="slider-item magnific-popup-item">
+                     <a href="img/training-process/45.jpg" title="IMG_20190328_102313 (1).jpg">
+                     <img class="" src="img/training-process/45.jpg" alt="IMG_20190328_102313 (1).jpg" title="IMG_20190328_102313 (1).jpg">
+                     </a>
+                  </div>
+                  <div class="slider-item magnific-popup-item">
+                     <a href="img/training-process/46.jpg" title="IMG_20190415_215836.jpg">
+                     <img class="" src="img/training-process/46.jpg" alt="IMG_20190415_215836.jpg" title="IMG_20190415_215836.jpg">
+                     </a>
+                  </div>
+                  <div class="slider-item magnific-popup-item">
+                     <a href="img/training-process/47.jpg" title="IMG_20190404_121733.jpg">
+                     <img class="" src="img/training-process/47.jpg" alt="IMG_20190404_121733.jpg" title="IMG_20190404_121733.jpg">
+                     </a>
+                  </div>
+                  <div class="slider-item magnific-popup-item">
+                     <a href="img/training-process/48.jpg" title="IMG_20190412_124447.jpg">
+                     <img class="" src="img/training-process/48.jpg" alt="IMG_20190412_124447.jpg" title="IMG_20190412_124447.jpg">
+                     </a>
+                  </div>
+                  <div class="slider-item magnific-popup-item">
+                     <a href="img/training-process/49.jpg" title="IMG_20190428_212840.jpg">
+                     <img class="" src="img/training-process/49.jpg" alt="IMG_20190428_212840.jpg" title="IMG_20190428_212840.jpg">
+                     </a>
+                  </div>
+                  <div class="slider-item magnific-popup-item">
+                     <a href="img/training-process/50.jpg" title="IMG_20190502_195254.jpg">
+                     <img class="" src="img/training-process/50.jpg" alt="IMG_20190502_195254.jpg" title="IMG_20190502_195254.jpg">
+                     </a>
+                  </div>
+                  <div class="slider-item magnific-popup-item">
+                     <a href="img/training-process/51.jpg" title="IMG_20190505_192413.jpg">
+                     <img class="" src="img/training-process/51.jpg" alt="IMG_20190505_192413.jpg" title="IMG_20190505_192413.jpg">
+                     </a>
+                  </div>
+                  <div class="slider-item magnific-popup-item">
+                     <a href="img/training-process/52.jpg" title="IMG_20190418_160523.jpg">
+                     <img class="" src="img/training-process/52.jpg" alt="IMG_20190418_160523.jpg" title="IMG_20190418_160523.jpg">
+                     </a>
+                  </div>
+                  <div class="slider-item magnific-popup-item">
+                     <a href="img/training-process/53.jpg" title="yKxD_-ybegI.jpg">
+                     <img class="" src="img/training-process/53.jpg" alt="yKxD_-ybegI.jpg" title="yKxD_-ybegI.jpg">
+                     </a>
+                  </div>
+                  <div class="slider-item magnific-popup-item">
+                     <a href="img/training-process/54.jpg" title="Z9uCRMJ0CrE.jpg">
+                     <img class="" src="img/training-process/54.jpg" alt="Z9uCRMJ0CrE.jpg" title="Z9uCRMJ0CrE.jpg">
+                     </a>
+                  </div>
+                  <div class="slider-item magnific-popup-item">
+                     <a href="img/training-process/55.jpg" title="Домашние задания.jpg">
+                     <img class="" src="img/training-process/55.jpg" alt="Домашние задания.jpg" title="Домашние задания.jpg">
+                     </a>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!--REVIEWS SECTION-->
+      <section id="reviews-section" class="section">
+         <div class="container">
+            <h3 class="is-size-2">Отзывы</h3>
+            <div class="reviews">
+               <!-- Start Carousel -->
+               <div id="slick-reviews" class="carousel">
+                  <div class="card">
+                     <div class="card-content is-paddingless">
+                        <div class="media">
+                           <div class="media-left">
+                              <figure class="image is-64x64">
+                                 <img src="img/avatars/alesa_avdeeva_64x64.jpg" alt="Image">
+                              </figure>
+                           </div>
+                           <div class="media-content">
+                              <p class="title is-4 no-padding">Алеся Авдеева</p>
+                              <p class="subtitle is-6 rating">
+                                 <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+                              </p>
+                           </div>
+                        </div>
+                        <div class="content">
+                           Привели дочку на&nbsp;гимнастику в&nbsp;АВИС-СПОРТ в&nbsp;сентябре 2018, едва только исполнилось 4&nbsp;года. Переживали, как она будет переносить нагрузки. Важно было и&nbsp;то, какие отношения сложатся с&nbsp;тренером и&nbsp;другими детьми . Все сложилось замечательно, дочка бежит на&nbsp;тренировки в&nbsp;отличном настроении. После тренировок возвращается всегда с&nbsp;улыбкой. При этом тренировки достаточно сложные и&nbsp;энергозатратные. Родители имеют возможность присутствовать на&nbsp;занятиях и&nbsp;наблюдать за&nbsp;тренировочным процессом. Поэтому можно абсолютно четко сформировать мнение о&nbsp;том, насколько эффективно построено занятие и&nbsp;общение тренера с&nbsp;подопечными. Регулярно устраиваются открытые уроки, где дети показывают все, чему научились. Немаловажно и&nbsp;то, что численность ребят в&nbsp;группах небольшая, поэтому тренер уделяет максимум внимания каждому ученику.
+                           Очень рады, что выбрали именно гимнастику и&nbsp;попали в&nbsp;АВИС-СПОРТ, будем тренироваться и&nbsp;дальше!
+                        </div>
+                     </div>
+                  </div>
+                  <div class="card">
+                     <div class="card-content is-paddingless">
+                        <div class="media">
+                           <div class="media-left">
+                              <figure class="image is-64x64">
+                                 <img src="img/avatars/sonya_ryazanceva_64x64.jpg" alt="Image">
+                              </figure>
+                           </div>
+                           <div class="media-content">
+                              <p class="title is-4 no-padding">Соня Рязанцева</p>
+                              <p class="subtitle is-6 rating">
+                                 <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+                              </p>
+                           </div>
+                        </div>
+                        <div class="content">
+                           Мне 13&nbsp;лет, я&nbsp;занимаюсь художественной гимнастикой в&nbsp;спорт-клубе &laquo;Avis-sport&raquo; Пришла примерно год назад, и&nbsp;уже многому научилась! Мне здесь очень нравиться заниматься! У&nbsp;тренера индивидуальный подход ко&nbsp;всем гимнасткам. Удобное время занятий, так что, можно совмещать гимнастику со&nbsp;школой. А&nbsp;так&nbsp;же я&nbsp;хожу на&nbsp;танцы, (они у&nbsp;меня шесть раз в&nbsp;неделю), и&nbsp;гимнастика очень помогает, появляется свобода движения. Мне нравится как нас растягивают, не&nbsp;больно, но&nbsp;эффективно. Учим новые элементы. Занимаемся с&nbsp;предметами. Очень хороший спортивный клуб!!!
+                        </div>
+                     </div>
+                  </div>
+                  <div class="card">
+                     <div class="card-content is-paddingless">
+                        <div class="media">
+                           <div class="media-left">
+                              <figure class="image is-64x64">
+                                 <img src="img/avatars/mikhail_churakov_64x64.jpg" alt="Image">
+                              </figure>
+                           </div>
+                           <div class="media-content">
+                              <p class="title is-4 no-padding">Михаил Чураков</p>
+                              <p class="subtitle is-6 rating">
+                                 <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+                              </p>
+                           </div>
+                        </div>
+                        <div class="content">
+                           Уже несколько лет вдвоем с&nbsp;девушкой занимаемся классическим танцем, и&nbsp;в&nbsp;какой-то момент поняли, что на&nbsp;многие элементы просто не&nbsp;хватает растяжки и&nbsp;сил в&nbsp;мышцах. Стали искать что-то, что хорошо сочеталось, и&nbsp;вот&nbsp;&mdash; узнали об&nbsp;этом месте от&nbsp;знакомых.
+                           1) Здесь преподают по&nbsp;принципу &laquo;чтобы было в&nbsp;радость&raquo;, и&nbsp;похоже, что это действительно так. Никаких сверхчеловеческих усилий и&nbsp;&laquo;ломки&raquo;, все мягко и&nbsp;с&nbsp;любовью, но&nbsp;и&nbsp;никаких лишних поблажек&nbsp;&mdash; иначе откуда результаты?
+                           2) Наверное единственное место в&nbsp;городе, где ведут занятия по&nbsp;худ. Гимнастике для взрослых! Без каких либо ограничений по&nbsp;возрасту, физической форме и&nbsp;даже полу!
+                           3) Вполне адекватная ценовая политика. Учитывая, что занятия ведут реальные мастера спорта по&nbsp;Худ.Гимнастике&nbsp;&mdash; это вообще аттракцион невиданной щедрости с&nbsp;их&nbsp;стороны!
+                           В&nbsp;общем место нам с&nbsp;девушкой офигенно понравилось! Идеально зашло под наши цели!
+                           Впереди совместный номер ^_^
+                        </div>
+                     </div>
+                  </div>
+                  <div class="card">
+                     <div class="card-content is-paddingless">
+                        <div class="media">
+                           <div class="media-left">
+                              <figure class="image is-64x64">
+                                 <img src="img/avatars/girl.png" alt="Image">
+                              </figure>
+                           </div>
+                           <div class="media-content">
+                              <p class="title is-4 no-padding">Юлия Пономарева</p>
+                              <p class="subtitle is-6 rating">
+                                 <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+                              </p>
+                           </div>
+                        </div>
+                        <div class="content">
+                           Моей дочке 5&nbsp;лет, она занимается в&nbsp;младшей группе. Ей&nbsp;очень нравятся тренировки, настолько, что даже по&nbsp;вечерам она все время занимается и&nbsp;занимается: мостики, шпагаты, кувырки, колесо, &laquo;шассе-шассе-шаг-прыжок&raquo;, скакалка, мяч... Бедные наши соседи снизу! Даже в&nbsp;садике на&nbsp;прогулке в&nbsp;зимней куртке и&nbsp;в&nbsp;теплых штанищах на&nbsp;шпагатах сидит, колесо делает, повороты отрабатывает. Ну&nbsp;и&nbsp;результат, конечно, заметен. Пришли мы&nbsp;4&nbsp;месяца назад довольно пухлыми, сейчас даже очень и&nbsp;очень стройные. После каждой! тренировки было заметно, как она стройнеет. И&nbsp;на&nbsp;утреннике в&nbsp;садике было видно, как она отличается от&nbsp;других: собранность, сосредоточенность, осанка, точность движений, ловкость. Тренировки в&nbsp;группе разнообразные, интересные. Тренеры профессиональные, хорошо очень ладят с&nbsp;детьми, рассказывают, показывают, подробно объясняют, следят за&nbsp;СОБЛЮДЕНИЕМ ТЕХНИКИ БЕЗОПАСНОСТИ.
+                        </div>
+                     </div>
+                  </div>
+                  <div class="card">
+                     <div class="card-content is-paddingless">
+                        <div class="media">
+                           <div class="media-left">
+                              <figure class="image is-64x64">
+                                 <img src="img/avatars/natalia_kachina_64x64.jpg" alt="Image">
+                              </figure>
+                           </div>
+                           <div class="media-content">
+                              <p class="title is-4 no-padding">Наталия Качина</p>
+                              <p class="subtitle is-6 rating">
+                                 <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+                              </p>
+                           </div>
+                        </div>
+                        <div class="content">
+                           Занимаемся вместе с&nbsp;молодым человеком и&nbsp;оба в&nbsp;полном восторге. На&nbsp;самом деле не&nbsp;ожидала. что мне так понравится, решила попробовать.&nbsp;а&nbsp;там, как пойдет. Заниматься гимнастикой я&nbsp;начала уже во&nbsp;взрослом возрасте не&nbsp;имея особой физической подготовки для этого, да&nbsp;и&nbsp;вообще тело было довольно инертно и&nbsp;очень любило комфорт. Но&nbsp;вытащив себя из&nbsp;привычных комфортных рамок, обнаружила в&nbsp;себе много нового, недавно наткнулась на&nbsp;цитату, с&nbsp;которой полностью согласна: &laquo;Каждая победа, одержанная над собой, означает новую силу для обретения ещё больших побед&raquo;. И&nbsp;гимнастика&nbsp;&mdash; это постоянные победы над собой. И&nbsp;я&nbsp;замечаю, как эти победы над инертностью в&nbsp;теле, над страхами, что не&nbsp;получится или перед какими-то элементами, они дают мне больше решительности на&nbsp;то, чтобы и&nbsp;в&nbsp;других областях пробовать новое, открывать новые грани себя и&nbsp;своих возможностей. Это очень здорово! С&nbsp;психологического плана порой начать сложнее, с&nbsp;тела проще начать побеждать. Развивая сосредоточенность, волю на&nbsp;тренировке, она развивается в&nbsp;жизни в&nbsp;целом и&nbsp;помогает преодолевать многое.
+                           Именно это место мне нравится своим подходом, тут нет никаких рамок и&nbsp;ограничений по&nbsp;подготовке, полу, возрасту. Подход бережный, не&nbsp;ломают, но&nbsp;необходимая строгость соблюдается, потому что иначе наше тело начнет ведь филонить, искать возможности не&nbsp;напрягаться. Есть работа с&nbsp;предметом, потолки высокие, вообще места хватает, удобно. Развитие идет интенсивно и&nbsp;интересно, все время какая-то новизна, уходишь с&nbsp;тренировки уставший, но&nbsp;одержавший победу над собой.
+                           Побед в&nbsp;гимнастике много, и&nbsp;я&nbsp;заметила, что благодаря&nbsp;ей, лучше получаться стало многое.
+                           Попробуйте и&nbsp;вы, вдруг и&nbsp;вам понравится?
+                           Для детей это тоже замечательно, ведь когда ребенок уже с&nbsp;детства привыкает одерживать победы над собой и&nbsp;отваживаться на&nbsp;большее, то&nbsp;ему и&nbsp;по&nbsp;жизни дальше будет проще и&nbsp;интереснее, он&nbsp;будет победителем и&nbsp;сможет раскрыть множество своих возможностей и&nbsp;талантов. Это потрясающе!
+                           В&nbsp;общем решайтесь на&nbsp;все, что хотели попробовать, никогда не&nbsp;поздно!
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <!-- End Carousel -->
+         </div>
+         </div>
+      </section>
+      <!--ADDRESSES SECTION-->
+      <section class="section screen" id="findus-section">
+      <div class="container">
+         <h3 class="is-size-3">Наши адреса</h3>
+         <div class="columns">
+            <div class="column">
+               <div class="card">
+                  <header class="card-header">
+                     <p class="card-header-title">г. Екатеринбург, ул. Стачек, 3</p>
+                  </header>
+                  <div class="card-image">
+                     <figure class="image is-4by3">
+                        <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
+                     </figure>
+                  </div>
+               </div>
+            </div>
+            <div class="column">
+               <div class="card">
+                  <header class="card-header">
+                     <p class="card-header-title">г.Верхняя Пышма, ул.Кривоусова,53Б</p>
+                  </header>
+                  <div class="card-image">
+                     <figure class="image is-4by3">
+                        <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
+                     </figure>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="columns">
+            <div class="column">
+                <div class="card">
+                  <header class="card-header">
+                     <p class="card-header-title">г. Екатеринбург, ул. Белинского, 222</p>
+                  </header>
+                  <div class="card-image">
+                     <figure class="image is-4by3">
+                        <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
+                     </figure>
+                  </div>
+               </div>
+            </div>
+            <div class="column">
+                <div class="card">
+                  <header class="card-header">
+                     <p class="card-header-title">г. Березовский, ул. Исакова, 7А</p>
+                  </header>
+                  <div class="card-image">
+                     <figure class="image is-4by3">
+                        <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
+                     </figure>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!-- <ul>
+            <li><strong>Ботаника: ул. Белинского, 222</strong></li>
+            <li><strong>Эльмаш: ул. Стачек, 3</strong></li>
+            <li><strong>г. Верхняя Пышма, ул. Кривоусова, 53Б</strong></li>
+            <li><strong>г. Березовский, Исакова, 7А</strong></li>
+            </ul>
+            <script type="text/javascript" charset="utf-8" async
             src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A2a3fe2e1f112cd9e9974ec732a0f73ff167590615bcbcd0b07cbd29ceeb79b2e&amp;width=100%25&amp;height=600&amp;lang=ru_RU&amp;scroll=false"></script>
-</section>
-<!--FOOTER-->
-<footer class="footer has-text-centered">
-    <div class="container">
-        <div class="columns">
-            <div class="column is-8-desktop is-offset-2-desktop">
-                <p>
-                    <strong class="has-text-weight-semibold">
-                        ©2018 Avis-спорт
-                    </strong>
-                </p>
-            </div>
+            -->
         </div>
-    </div>
-</footer>
-
-
-<!--
-===============
-HERE BE MODALS
-===============
--->
-<!--KIDS SCHEDULE MODAL-->
-
-<div id="modal-schedule-kids" class="modal modal-full-screen modal-fx-fadeInScale">
-    <div class="modal-background"></div>
-    <div class="modal-content modal-card">
-        <header class="modal-card-head">
-            <p class="modal-card-title">Младшая группа</p>
-            <button class="modal-button-close delete" aria-label="close"></button>
-        </header>
-        <section class="modal-card-body">
-            <!-- Modal card body -->
-        </section>
-        <footer class="modal-card-foot">
-            <button class="modal-button-close button is-success">Save changes</button>
-            <button class="modal-button-close button">Cancel</button>
-        </footer>
-    </div>
-</div>
-<!--TEENAGERS SCHEDULE MODAL-->
-<div id="modal-schedule-teenagers" class="modal modal-full-screen modal-fx-fadeInScale">
-    <div class="modal-background"></div>
-    <div class="modal-content modal-card">
-        <header class="modal-card-head">
-            <p class="modal-card-title">Старшая группа</p>
-            <button class="modal-button-close delete" aria-label="close"></button>
-        </header>
-        <section class="modal-card-body">
-            <!-- Modal card body -->
-        </section>
-        <footer class="modal-card-foot">
-            <button class="modal-button-close button is-success">Save changes</button>
-            <button class="modal-button-close button">Cancel</button>
-        </footer>
-    </div>
-</div>
-<!--ADULTS SCHEDULE MODAL-->
-<div id="modal-schedule-adults" class="modal modal-fx-fadeInScale">
-    <div class="modal-background"></div>
-    <div class="modal-content modal-card">
-        <header class="modal-card-head">
-            <p class="modal-card-title">Взрослая группа</p>
-            <button class="modal-button-close delete" aria-label="close"></button>
-        </header>
-        <section class="modal-card-body">
-            <!-- Modal card body -->
-            <iframe src="https://calendar.google.com/calendar/embed?showTabs=0&amp;showCalendars=0&amp;showTz=0&amp;height=500&amp;wkst=2&amp;hl=ru&amp;bgcolor=%23ffffff&amp;src=r0nbvmg1jt26el8q4b9gab2op4%40group.calendar.google.com&amp;color=%232F6309&amp;ctz=Asia%2FYekaterinburg"
-                    style="border-width:0" width="600" height="500" frameborder="0" scrolling="no"></iframe>
-        </section>
-    </div>
-</div>
-
-    <script>
-    		bulmaCarousel.attach('#carousel-demo', {
-    			slidesToScroll: 1,
-    			slidesToShow: 2
-    		});
-    		</script>
-</body>
+      </section>
+      <!--FOOTER-->
+      <footer class="footer has-text-centered">
+         <div class="container">
+            <div class="columns">
+               <div class="column is-8-desktop is-offset-2-desktop">
+                  <p>
+                     <strong class="has-text-weight-semibold">
+                     ©2018 Avis-спорт
+                     </strong>
+                  </p>
+               </div>
+            </div>
+         </div>
+      </footer>
+   </body>
+   <script type="text/javascript" src="lib/jQuery/jquery-3.4.1.min.js"></script>
+   <script defer src="lib/magnific-popup/jquery.magnific-popup.min.js"></script>
+   <script defer src="lib/slick/slick.min.js"></script>
+   <script src="lib/gumshoe/gumshoe.polyfills.min.js"></script>
+   <script src="lib/smooth-scroll/smooth-scroll.polyfills.min.js"></script>
+   <script defer src="lib/modal-fx.min.js"></script>
+   <script async type="text/javascript" src="lib/bulma.js"></script>
 </html>
