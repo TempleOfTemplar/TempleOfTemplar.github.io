@@ -44,6 +44,7 @@
     "node-sass": "^4.12.0",
     "npm-run-all": "^4.1.5",
     "postcss-cli": "^6.1.2",
+    "readmore-js": "^2.2.1",
     "smooth-scroll": "^16.1.0"
   },
   "homepage": "https://github.com/jgthms/bulma-start#readme",

@@ -35,7 +35,9 @@ $tabs-link-color: #fff;
 $tabs-border-bottom-width: 2px;
 $tabs-link-hover-color: $blue;
 $tabs-link-padding: 0.25em 0.5em;
+$tabs-link-active-color: $basic-blue;
 $navbar-background-color: $basic-orange;
+
 
 // 4. Import the rest of Bulma
 
@@ -200,4 +202,26 @@ $navbar-background-color: $basic-orange;
 .slick-next:before
 {
   color: $basic-orange !important;
+}
+
+.card {
+  &.is-horizontal {
+    display: flex;
+
+    .card-image {
+      width: 100%;
+      height: 100%;
+    }
+
+    .card-stacked {
+      flex-direction: column;
+      flex: 1 1 auto;
+      display: flex;
+      position: relative;
+
+      .card-content {
+        flex-grow: 1;
+      }
+    }
+  }
 }
