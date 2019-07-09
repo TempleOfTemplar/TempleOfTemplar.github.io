@@ -6989,27 +6989,26 @@ label.panel-block {
 
 /*NAVBAR*/
 .logo {
-  padding-top: 0;
-  padding-bottom: 0;
-  padding-right: 0.5rem; }
+  padding: 0 0.25rem; }
 
 .logo img {
   max-height: 52px; }
 
 .contact_phone {
   color: white;
-  font-size: 24px;
-  line-height: 24px;
+  font-size: 26px;
+  line-height: 26px;
   vertical-align: middle; }
 
 .contact_phone__mobile {
   color: white;
-  font-size: 24px;
-  line-height: 24px;
+  font-size: 22px;
+  line-height: 22px;
   vertical-align: middle; }
 
 .mobile-contacts {
-  padding-left: 0; }
+  padding-left: 0;
+  padding-right: 0.25rem; }
 
 .social-block__mobile {
   display: flex;
@@ -7047,7 +7046,7 @@ label.panel-block {
   display: inline-block; }
 
 .phone-icon + .phone-number {
-  margin-left: 0.25rem; }
+  margin-left: 0; }
 
 .navbar-title-wrapper {
   flex-direction: column;
@@ -7081,6 +7080,10 @@ label.panel-block {
 .slick-next:before {
   color: #fb9744 !important; }
 
+.slick-prev,
+.slick-next {
+  z-index: 1; }
+
 .card.is-horizontal {
   display: flex; }
   .card.is-horizontal .card-image {
@@ -7093,3 +7096,27 @@ label.panel-block {
     position: relative; }
     .card.is-horizontal .card-stacked .card-content {
       flex-grow: 1; }
+
+.reviews-carousel .slick-slide {
+  margin: 0 1.5rem; }
+
+/* the parent */
+.reviews-carousel .slick-list {
+  margin: 0 -1.5rem; }
+
+#hero__girl-image {
+  margin-top: 40px; }
+
+.tabs.is-medium-to-large {
+  font-size: 1.35rem; }
+
+.review-text {
+  margin-bottom: 0 !important; }
+
+.readmore {
+  margin-top: 1rem;
+  align-self: flex-end;
+  text-align: right; }
+
+.is-small-image {
+  max-height: 200px; }

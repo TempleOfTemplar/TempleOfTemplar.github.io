@@ -1,14 +1,10 @@
 @charset "utf-8";
 
 // Customization
-
 // You can easily customize Bulma with your own variables.
 // Just uncomment the following block to see the result.
-
-
 // 1. Import the initial variables
 @import "../node_modules/bulma/sass/utilities/initial-variables";
-
 
 // 2. Set your own initial variables
 // Update the blue shade, used for links
@@ -19,13 +15,12 @@
 // Update the sans-serif font family
 // $family-sans-serif: "Helvetica", "Arial", sans-serif;
 
-
 // 3. Set the derived variables
 // Use the new pink as the primary color
 
 $basic-orange: #fb9744;
 $basic-blue: #2287c9;
-$basic-red: #c9443b ;
+$basic-red: #c9443b;
 
 $blue: $basic-blue;
 $red: $basic-red;
@@ -38,9 +33,7 @@ $tabs-link-padding: 0.25em 0.5em;
 $tabs-link-active-color: $basic-blue;
 $navbar-background-color: $basic-orange;
 
-
 // 4. Import the rest of Bulma
-
 
 @import "../node_modules/bulma/bulma";
 
@@ -52,11 +45,11 @@ $navbar-background-color: $basic-orange;
   padding-top: 52px;
 }
 
-
 #navbarMenu {
   align-self: flex-end;
   justify-content: center;
 }
+
 /*
 #hero-columns {
   display: flex;
@@ -72,8 +65,6 @@ $navbar-background-color: $basic-orange;
   margin-top: 30px;
 }
 
-
-
 .modal-card-head, .modal-card-foot {
   justify-content: space-between;
 }
@@ -84,9 +75,7 @@ $navbar-background-color: $basic-orange;
 
 /*NAVBAR*/
 .logo {
-  padding-top: 0;
-  padding-bottom: 0;
-  padding-right: 0.5rem;
+  padding: 0 0.25rem;
 }
 
 .logo img {
@@ -95,20 +84,21 @@ $navbar-background-color: $basic-orange;
 
 .contact_phone {
   color: $white;
-  font-size: 24px;
-  line-height: 24px;
+  font-size: 26px;
+  line-height: 26px;
   vertical-align: middle;
 }
 
 .contact_phone__mobile {
   color: $white;
-  font-size: 24px;
-  line-height: 24px;
+  font-size: 22px;
+  line-height: 22px;
   vertical-align: middle;
 }
 
 .mobile-contacts {
   padding-left: 0;
+  padding-right: 0.25rem;
 }
 
 .social-block__mobile {
@@ -154,7 +144,7 @@ $navbar-background-color: $basic-orange;
 }
 
 .phone-icon + .phone-number {
-  margin-left: 0.25rem;
+  margin-left: 0;
 }
 
 .navbar-title-wrapper {
@@ -199,9 +189,13 @@ $navbar-background-color: $basic-orange;
 .slick-prev,
 .slick-next,
 .slick-prev:before,
-.slick-next:before
-{
+.slick-next:before {
   color: $basic-orange !important;
+}
+
+.slick-prev,
+.slick-next {
+  z-index: 1;
 }
 
 .card {
@@ -224,4 +218,39 @@ $navbar-background-color: $basic-orange;
       }
     }
   }
+}
+
+.reviews-carousel .slick-slide {
+  margin: 0 1.5rem;
+}
+
+/* the parent */
+.reviews-carousel .slick-list {
+  margin: 0 -1.5rem;
+}
+
+#hero__girl-image {
+  margin-top: 40px;
+}
+
+.tabs.is-medium-to-large {
+  font-size: 1.35rem;
+}
+
+.review-text {
+  margin-bottom: 0 !important;
+}
+
+.readmore {
+  margin-top: 1rem;
+  align-self: flex-end;
+  text-align: right;
+}
+
+.readmore-button {
+
+}
+
+.is-small-image {
+  max-height: 200px;
 }
