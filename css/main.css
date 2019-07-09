@@ -7084,18 +7084,26 @@ label.panel-block {
 .slick-next {
   z-index: 1; }
 
-.card.is-horizontal {
-  display: flex; }
-  .card.is-horizontal .card-image {
-    width: 100%;
-    height: 100%; }
-  .card.is-horizontal .card-stacked {
-    flex-direction: column;
-    flex: 1 1 auto;
-    display: flex;
-    position: relative; }
-    .card.is-horizontal .card-stacked .card-content {
-      flex-grow: 1; }
+@media screen and (min-width: 769px) {
+  .card.is-horizontal {
+    display: flex; }
+    .card.is-horizontal .card-image {
+      flex: 0 1 auto; }
+    .card.is-horizontal .card-stacked {
+      flex-direction: column;
+      flex: 1 1 auto;
+      display: flex;
+      position: relative; }
+      .card.is-horizontal .card-stacked .card-content {
+        flex-grow: 1; } }
+
+.is-small-image > img {
+  width: 100%; }
+
+@media screen and (min-width: 769px) {
+  .is-small-image > img {
+    height: 200px !important;
+    width: 200px !important; } }
 
 .reviews-carousel .slick-slide {
   margin: 0 1.5rem; }
@@ -7118,5 +7126,6 @@ label.panel-block {
   align-self: flex-end;
   text-align: right; }
 
-.is-small-image {
-  max-height: 200px; }
+.phone-number__pre {
+  font-size: 16px;
+  vertical-align: middle; }
