@@ -6963,6 +6963,9 @@ label.panel-block {
   margin-top: -52px;
   padding-top: 52px; }
 
+.section-title {
+  margin-bottom: 1rem; }
+
 #navbarMenu {
   align-self: flex-end;
   justify-content: center; }
