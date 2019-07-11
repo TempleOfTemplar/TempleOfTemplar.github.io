@@ -32,6 +32,7 @@ $tabs-link-hover-color: $blue;
 $tabs-link-padding: 0.25em 0.5em;
 $tabs-link-active-color: $basic-blue;
 $navbar-background-color: $basic-orange;
+$section-padding: 1.5rem;
 
 // 4. Import the rest of Bulma
 
@@ -46,7 +47,7 @@ $navbar-background-color: $basic-orange;
 }
 
 .section {
-  padding-bottom: 0;
+
 }
 
 #navbarMenu {

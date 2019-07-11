@@ -6945,7 +6945,7 @@ label.panel-block {
   padding: 3rem 1.5rem; }
 
 .section {
-  padding: 3rem 1.5rem; }
+  padding: 1.5rem; }
   @media screen and (min-width: 1024px) {
     .section.is-medium {
       padding: 9rem 1.5rem; }
@@ -6962,9 +6962,6 @@ label.panel-block {
   background-repeat: no-repeat;
   margin-top: -52px;
   padding-top: 52px; }
-
-.section {
-  padding-bottom: 0; }
 
 #navbarMenu {
   align-self: flex-end;
