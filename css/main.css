@@ -6963,6 +6963,9 @@ label.panel-block {
   margin-top: -52px;
   padding-top: 52px; }
 
+.section {
+  padding-bottom: 0; }
+
 #navbarMenu {
   align-self: flex-end;
   justify-content: center; }
@@ -7097,7 +7100,7 @@ label.panel-block {
       flex: 0 1 auto; }
     .card.is-horizontal .card-stacked {
       flex-direction: column;
-      flex: 1 1 auto;
+      flex: 0 1 auto;
       display: flex;
       position: relative; }
       .card.is-horizontal .card-stacked .card-content {
@@ -7105,6 +7108,10 @@ label.panel-block {
 
 .is-small-image > img {
   width: 100%; }
+
+.is-small-image > img {
+  max-height: 320px;
+  max-width: 320px; }
 
 @media screen and (min-width: 769px) {
   .is-small-image > img {

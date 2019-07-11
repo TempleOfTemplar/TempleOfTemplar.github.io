@@ -45,6 +45,10 @@ $navbar-background-color: $basic-orange;
   padding-top: 52px;
 }
 
+.section {
+  padding-bottom: 0;
+}
+
 #navbarMenu {
   align-self: flex-end;
   justify-content: center;
@@ -226,7 +230,7 @@ $navbar-background-color: $basic-orange;
 
       .card-stacked {
         flex-direction: column;
-        flex: 1 1 auto;
+        flex: 0 1 auto;
         display: flex;
         position: relative;
 
@@ -242,8 +246,13 @@ $navbar-background-color: $basic-orange;
 .is-small-image > img {
   width: 100%;
 }
-
+.is-small-image > img {
+  max-height: 320px;
+  max-width: 320px;
+}
 @include from($tablet) {
+
+
   .is-small-image > img {
     height: 200px !important;
     width: 200px !important;
