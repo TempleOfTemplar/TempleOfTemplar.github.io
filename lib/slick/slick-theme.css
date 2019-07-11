@@ -27,8 +27,8 @@
 
     display: block;
 
-    width: 30px;
-    height: 30px;
+    width: 1.5rem;
+    height: 1.5rem;
     padding: 0;
     -webkit-transform: translate(0, -50%);
     -ms-transform: translate(0, -50%);
@@ -67,7 +67,7 @@
 .slick-next:before
 {
     font-family: 'slick';
-    font-size: 30px;
+    font-size: 1.5rem;
     line-height: 1;
 
     opacity: .75;
@@ -79,11 +79,11 @@
 
 .slick-prev
 {
-    left: -30px;
+    left: -1.5rem;
 }
 [dir='rtl'] .slick-prev
 {
-    right: -30px;
+    right: -1.5rem;
     left: auto;
 }
 .slick-prev:before
@@ -97,12 +97,12 @@
 
 .slick-next
 {
-    right: -30px;
+    right: -1.5rem;
 }
 [dir='rtl'] .slick-next
 {
     right: auto;
-    left: -30px;
+    left: -1.5rem;
 }
 .slick-next:before
 {
@@ -116,7 +116,7 @@
 /* Dots */
 .slick-dotted.slick-slider
 {
-    margin-bottom: 30px;
+    margin-bottom: 1.5rem;
 }
 
 .slick-dots

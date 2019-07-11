@@ -138,7 +138,9 @@ $navbar-background-color: $basic-orange;
 }
 
 .phone-icon,
-.phone-number {
+.phone-number,
+.phone-number__pre,
+.phone-number-mobile__pre {
   vertical-align: middle;
   display: inline-block;
 }
@@ -167,7 +169,8 @@ $navbar-background-color: $basic-orange;
 }
 
 .main-title {
-
+  margin-top: 1.2rem;
+  font-size: 1.2rem;
 }
 
 .check-icon {
@@ -210,8 +213,6 @@ $navbar-background-color: $basic-orange;
 //          .card-content
 //            flex-grow: 1;
 
-
-
 .card {
   @include from($tablet) {
     &.is-horizontal {
@@ -238,24 +239,33 @@ $navbar-background-color: $basic-orange;
 
 }
 
-.is-small-image>img{
+.is-small-image > img {
   width: 100%;
 }
+
 @include from($tablet) {
-  .is-small-image>img{
+  .is-small-image > img {
     height: 200px !important;
     width: 200px !important;
   }
 
 }
-.reviews-carousel .slick-slide {
-  margin: 0 1.5rem;
-}
 
-/* the parent */
-.reviews-carousel .slick-list {
-  margin: 0 -1.5rem;
-}
+//.reviews-carousel .slick-slide {
+//  margin: 0 1.5rem;
+//}
+//
+//#pupils-gallery .slick-slide {
+//  margin: 0 1.5rem;
+//}
+//
+//.reviews-carousel .slick-list {
+//  margin: 0 -1.5rem;
+//}
+//
+//#pupils-gallery .slick-list {
+//  margin: 0 -1.5rem;
+//}
 
 #hero__girl-image {
   margin-top: 40px;
@@ -279,7 +289,27 @@ $navbar-background-color: $basic-orange;
 
 }
 
+/*  font-size: 16px;*/
 .phone-number__pre {
-  font-size: 16px;
   vertical-align: middle;
+}
+
+.feature-block {
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: center;
+  @include from($tablet) {
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .feature-block__icon + .feature-block__text {
+    margin-left: 1rem;
+  }
+}
+
+.modal-content iframe {
+  height: 600px;
+  max-height: 100%;
 }
