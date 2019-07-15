@@ -45,6 +45,7 @@ $section-padding: 1.5rem;
   margin-top: -52px;
   padding-top: 52px;
 }
+
 .section-title {
   margin-bottom: 1rem;
 }
@@ -89,14 +90,14 @@ $section-padding: 1.5rem;
 .contact_phone {
   color: $white;
   font-size: 26px;
-  line-height: 26px;
+  line-height: 20px;
   vertical-align: middle;
 }
 
 .contact_phone__mobile {
   color: $white;
-  font-size: 22px;
-  line-height: 22px;
+  font-size: 14px;
+  line-height: 14px;
   vertical-align: middle;
 }
 
@@ -110,30 +111,29 @@ $section-padding: 1.5rem;
   padding-left: 0.5rem;
 }
 
-.social-block {
+.navbar__social-block {
   display: flex;
   padding-left: 0.5rem;
 }
 
-.social-block > a > img {
+.navbar__social-block > a > img {
   display: block;
   width: 32px;
   height: 32px;
   max-height: 32px;
   max-width: 32px;
-}
-
-.social-block a + a,
-.social-block__mobile a + a {
-  padding-left: 0.5rem;
 }
 
 .social-block__mobile > a > img {
-  display: block;
   width: 32px;
   height: 32px;
   max-height: 32px;
   max-width: 32px;
+}
+
+.navbar__social-block a + a,
+.social-block__mobile a + a {
+  padding-left: 0.5rem;
 }
 
 .vcentered-icon {
@@ -246,12 +246,13 @@ $section-padding: 1.5rem;
 .is-small-image > img {
   width: 100%;
 }
+
 .is-small-image > img {
   max-height: 320px;
   max-width: 320px;
 }
-@include from($tablet) {
 
+@include from($tablet) {
 
   .is-small-image > img {
     height: 200px !important;
@@ -321,4 +322,74 @@ $section-padding: 1.5rem;
 .modal-content iframe {
   height: 600px;
   max-height: 100%;
+}
+
+.footer__contact_phone {
+  font-size: 16px;
+  text-align: right;
+  @include from($tablet) {
+    font-size: 22px;
+  }
+}
+
+.footer__email-link {
+  font-size: 16px;
+  text-align: right;
+  @include from($tablet) {
+    font-size: 22px;
+  }
+}
+
+.footer__sublogo-title {
+  font-size: 15px;
+  @include from($tablet) {
+    font-size: 1.5rem
+  }
+}
+
+.footer__email-link>* {
+  vertical-align: middle;
+}
+
+.footer__email-link span {
+  margin-left: 0.5rem;
+}
+
+.footer__social-block {
+  display: block;
+}
+
+.footer__contact_phone + .footer__email-link {
+  margin-top: 0.5rem;
+}
+
+.footer__social-block a + a {
+  padding-left: 0.5rem;
+}
+
+.footer__social-block > a > img {
+  display: block;
+  width: 32px;
+  height: 32px;
+  max-height: 32px;
+  max-width: 32px;
+}
+
+.footer__social-block {
+  margin-top: 0.5rem;
+  display: flex;
+  justify-content: flex-end;
+}
+
+//.navbar__social-block {
+//  display: flex;
+//  padding-left: 0.5rem;
+//}
+
+.footer {
+  padding: 2rem 1.5rem 3rem 1.5rem;
+}
+
+.footer-row {
+  text-align: right;
 }

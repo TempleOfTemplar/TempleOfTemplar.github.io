@@ -7000,13 +7000,13 @@ label.panel-block {
 .contact_phone {
   color: white;
   font-size: 26px;
-  line-height: 26px;
+  line-height: 20px;
   vertical-align: middle; }
 
 .contact_phone__mobile {
   color: white;
-  font-size: 22px;
-  line-height: 22px;
+  font-size: 14px;
+  line-height: 14px;
   vertical-align: middle; }
 
 .mobile-contacts {
@@ -7017,27 +7017,26 @@ label.panel-block {
   display: flex;
   padding-left: 0.5rem; }
 
-.social-block {
+.navbar__social-block {
   display: flex;
   padding-left: 0.5rem; }
 
-.social-block > a > img {
+.navbar__social-block > a > img {
   display: block;
   width: 32px;
   height: 32px;
   max-height: 32px;
   max-width: 32px; }
-
-.social-block a + a,
-.social-block__mobile a + a {
-  padding-left: 0.5rem; }
 
 .social-block__mobile > a > img {
-  display: block;
   width: 32px;
   height: 32px;
   max-height: 32px;
   max-width: 32px; }
+
+.navbar__social-block a + a,
+.social-block__mobile a + a {
+  padding-left: 0.5rem; }
 
 .vcentered-icon {
   display: inline-block;
@@ -7151,3 +7150,56 @@ label.panel-block {
 .modal-content iframe {
   height: 600px;
   max-height: 100%; }
+
+.footer__contact_phone {
+  font-size: 16px;
+  text-align: right; }
+  @media screen and (min-width: 769px) {
+    .footer__contact_phone {
+      font-size: 22px; } }
+
+.footer__email-link {
+  font-size: 16px;
+  text-align: right; }
+  @media screen and (min-width: 769px) {
+    .footer__email-link {
+      font-size: 22px; } }
+
+.footer__sublogo-title {
+  font-size: 15px; }
+  @media screen and (min-width: 769px) {
+    .footer__sublogo-title {
+      font-size: 1.5rem; } }
+
+.footer__email-link > * {
+  vertical-align: middle; }
+
+.footer__email-link span {
+  margin-left: 0.5rem; }
+
+.footer__social-block {
+  display: block; }
+
+.footer__contact_phone + .footer__email-link {
+  margin-top: 0.5rem; }
+
+.footer__social-block a + a {
+  padding-left: 0.5rem; }
+
+.footer__social-block > a > img {
+  display: block;
+  width: 32px;
+  height: 32px;
+  max-height: 32px;
+  max-width: 32px; }
+
+.footer__social-block {
+  margin-top: 0.5rem;
+  display: flex;
+  justify-content: flex-end; }
+
+.footer {
+  padding: 2rem 1.5rem 3rem 1.5rem; }
+
+.footer-row {
+  text-align: right; }
