@@ -6957,13 +6957,28 @@ label.panel-block {
   padding: 3rem 1.5rem 6rem; }
 
 #hero-section {
-  background-image: url("../img/fon_1.png"), linear-gradient(#FFFFFF, #FCFCFC, #EDF03E, #FCFCFC, #FFFFFF);
+  background-image: linear-gradient(#FFFFFF, #FCFCFC, #EDF03E, #FCFCFC, #FFFFFF);
   background-size: 100%;
+  position: relative;
   background-repeat: no-repeat;
-  margin-top: -52px;
-  padding-top: 52px; }
+  padding-top: 0;
+  padding-bottom: 2rem; }
+  @media screen and (min-width: 769px) {
+    #hero-section {
+      background-image: url("../img/fon_1.png"), linear-gradient(#FFFFFF, #FCFCFC, #EDF03E, #FCFCFC, #FFFFFF); }
+      #hero-section:after {
+        position: absolute;
+        bottom: 0;
+        height: 100%;
+        width: 100%;
+        content: "";
+        background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 90%, white 100%);
+        pointer-events: none;
+        /* so the text is still selectable */ } }
 
 .section-title {
+  font-weight: 600;
+  color: #fb9744;
   margin-bottom: 1rem; }
 
 #navbarMenu {
@@ -6971,17 +6986,20 @@ label.panel-block {
   justify-content: center; }
 
 /*
-#hero-columns {
-  display: flex;
-}
-@media screen and (max-width: $tablet - 1px) {
   #hero-columns {
-    flex-direction: column-reverse;
+    display: flex;
   }
-}
-*/
+  @media screen and (max-width: $tablet - 1px) {
+    #hero-columns {
+      flex-direction: column-reverse;
+    }
+  }
+  */
 #mainForm {
-  margin-top: 30px; }
+  margin-top: 1rem; }
+  @media screen and (min-width: 769px) {
+    #mainForm {
+      margin-top: 1.5rem; } }
 
 .modal-card-head,
 .modal-card-foot {
@@ -7029,10 +7047,10 @@ label.panel-block {
   max-width: 32px; }
 
 .social-block__mobile > a > img {
-  width: 32px;
-  height: 32px;
-  max-height: 32px;
-  max-width: 32px; }
+  width: 24px;
+  height: 24px;
+  max-height: 24px;
+  max-width: 24px; }
 
 .navbar__social-block a + a,
 .social-block__mobile a + a {
@@ -7069,8 +7087,12 @@ label.panel-block {
   line-height: 21px; }
 
 .main-title {
-  margin-top: 1.2rem;
-  font-size: 1.2rem; }
+  margin-top: 1rem;
+  font-size: 1.2rem;
+  color: #fb9744; }
+  @media screen and (min-width: 769px) {
+    .main-title {
+      margin-top: 1.2rem; } }
 
 .check-icon {
   color: #23d160;
@@ -7120,10 +7142,15 @@ label.panel-block {
 #hero__girl-image {
   margin-top: 40px; }
 
+#hero__girl-image img {
+  width: 440px;
+  margin: 0 auto; }
+
 .tabs.is-medium-to-large {
   font-size: 1.35rem; }
 
 .review-text {
+  padding-right: 0.5rem;
   margin-bottom: 0 !important; }
 
 .readmore {
@@ -7156,14 +7183,14 @@ label.panel-block {
   text-align: right; }
   @media screen and (min-width: 769px) {
     .footer__contact_phone {
-      font-size: 22px; } }
+      font-size: 20px; } }
 
 .footer__email-link {
   font-size: 16px;
   text-align: right; }
   @media screen and (min-width: 769px) {
     .footer__email-link {
-      font-size: 22px; } }
+      font-size: 20px; } }
 
 .footer__sublogo-title {
   font-size: 15px; }
@@ -7199,7 +7226,58 @@ label.panel-block {
   justify-content: flex-end; }
 
 .footer {
-  padding: 2rem 1.5rem 3rem 1.5rem; }
+  padding: 1.5rem; }
 
 .footer-row {
   text-align: right; }
+
+.btn-shiny {
+  color: #672200;
+  font-family: Open Sans, sans-serif;
+  font-weight: bold;
+  background-image: linear-gradient(yellow, orange);
+  border-color: goldenrod;
+  display: block;
+  position: relative;
+  overflow: hidden; }
+
+.btn-shiny:after {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 300px;
+  margin-left: 60px;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0), #fff 50%, rgba(255, 255, 255, 0));
+  opacity: .6;
+  position: absolute;
+  left: -40px;
+  top: -150px;
+  z-index: 1;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(-45deg);
+  transition: all .1s;
+  -webkit-animation-name: slideme;
+  animation-name: slideme;
+  -webkit-animation-duration: 3s;
+  animation-duration: 3s;
+  -webkit-animation-delay: 50ms;
+  animation-delay: 50ms;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite; }
+
+@-webkit-keyframes slideme {
+  0% {
+    left: -50%;
+    margin-left: 0; }
+  100%,
+  30% {
+    left: 110%;
+    margin-left: 80px; } }
+
+.experience-block {
+  margin-top: 0.7rem; }
+
+ul.experiece-list {
+  margin-top: 0.3rem; }
